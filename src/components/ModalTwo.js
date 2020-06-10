@@ -26,7 +26,14 @@ const ModalTwo = () => {
       >
         2
       </Button>
-      <Modal size="lg" show={show} onHide={handleClose}>
+      <Modal
+        css={css`
+          margin-top: 10vh;
+        `}
+        size="lg"
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Body closeButton>
           <iframe
             src="https://storymaps.arcgis.com/stories/9f9c0cdeff284d52a0d38413fe03225b"

@@ -26,7 +26,14 @@ const ModalFive = () => {
       >
         5
       </Button>
-      <Modal size="lg" show={show} onHide={handleClose}>
+      <Modal
+        css={css`
+          margin-top: 10vh;
+        `}
+        size="lg"
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Body closeButton>
           <iframe
             src="https://storymaps.arcgis.com/stories/99af2e4040f94fe4add0c8eb6ff822c5"

@@ -26,7 +26,14 @@ const ModalEight = () => {
       >
         8
       </Button>
-      <Modal size="lg" show={show} onHide={handleClose}>
+      <Modal
+        css={css`
+          margin-top: 10vh;
+        `}
+        size="lg"
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Body closeButton>
           <iframe
             src="https://storymaps.arcgis.com/stories/6ab4258b3e3e4789a30a9732e9e8938f"

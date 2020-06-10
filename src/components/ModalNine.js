@@ -26,7 +26,14 @@ const ModalNine = () => {
       >
         9
       </Button>
-      <Modal size="lg" show={show} onHide={handleClose}>
+      <Modal
+        css={css`
+          margin-top: 10vh;
+        `}
+        size="lg"
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Body closeButton>
           <iframe
             src="https://storymaps.arcgis.com/stories/cc5da35cab6c457f8c59ffd1d58bb7c1"
