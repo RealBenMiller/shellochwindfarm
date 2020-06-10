@@ -5,16 +5,7 @@ import Layout from "../components/layout"
 import Exhibition from "../images/background.png"
 import ScrollContainer from "react-indiana-drag-scroll"
 import "bootstrap/dist/css/bootstrap.min.css"
-import WelcomeModal from "../components/welcomeModal"
-import ModalOne from "../components/ModalOne"
-import ModalTwo from "../components/ModalTwo"
-import ModalThree from "../components/ModalThree"
-import ModalFour from "../components/ModalFour"
-import ModalFive from "../components/ModalFive"
-import ModalSix from "../components/ModalSix"
-import ModalSeven from "../components/ModalSeven"
-import ModalEight from "../components/ModalEight"
-import ModalNine from "../components/ModalNine"
+import FeedbackModal from "../components/FeedbackModal"
 
 const Image = styled.img`
   max-width: none;
@@ -38,7 +29,7 @@ const IndexPage = () => (
       `}
       style={{ height: "90vh" }}
     >
-      <WelcomeModal />
+      <FeedbackModal />
       <div
         css={css`
           position: relative;
@@ -46,15 +37,6 @@ const IndexPage = () => (
         `}
       >
         <Image src={Exhibition} alt="" />
-        <ModalOne />
-        <ModalTwo />
-        <ModalThree />
-        <ModalFour />
-        <ModalFive />
-        <ModalSix />
-        <ModalSeven />
-        <ModalEight />
-        <ModalNine />
       </div>
     </ScrollContainer>
   </Layout>

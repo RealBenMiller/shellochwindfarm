@@ -1,9 +1,8 @@
 import React, { useState } from "react"
 import { jsx, css, Global } from "@emotion/core"
 import { Button, Modal } from "react-bootstrap"
-import BoardOne from "../images/Asset 5.png"
 
-const ModalFour = () => {
+const ModalSeven = () => {
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
@@ -13,27 +12,35 @@ const ModalFour = () => {
       <Button
         css={css`
           position: absolute;
-          top: 17.4%;
-          left: 47.65%;
+          top: 22%;
+          left: 64.1%;
           height: 45px;
           width: 45px;
           border-radius: 50%;
           background-color: white;
           color: blue;
-          font-size: 22px;
+          font-size: 14px;
           line-height: 22px;
         `}
         onClick={handleShow}
       >
-        4
+        7
       </Button>
-      <Modal show={show} onHide={handleClose}>
+      <Modal size="lg" show={show} onHide={handleClose}>
         <Modal.Body closeButton>
-          <img src={BoardOne} alt="" />
+          <iframe
+            src="https://storymaps.arcgis.com/stories/8bdd8fc474f44c98a42a392f9587dd74"
+            frameborder="0"
+            css={css`
+              position: relative;
+              width: 100%;
+              min-height: 500px;
+            `}
+          ></iframe>
         </Modal.Body>
       </Modal>
     </>
   )
 }
 
-export default ModalFour
+export default ModalSeven
