@@ -26,7 +26,7 @@ const Navigation = () => {
           src={Logo}
         />
 
-<Button
+        <Button
           css={css`
             margin-left: 20px;
             a {
@@ -35,6 +35,13 @@ const Navigation = () => {
             }
           `}
         >
+          <a
+            href="
+          /"
+          >
+            Virtual Exhibition
+          </a>
+        </Button>
         <Button
           css={css`
             margin-left: 20px;
