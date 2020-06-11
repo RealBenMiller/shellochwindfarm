@@ -28,7 +28,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -39,7 +40,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -50,7 +52,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -61,7 +64,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -72,7 +76,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -83,7 +88,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -94,7 +100,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
@@ -105,7 +112,21 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 100%;
+            width: 70%;
+            margin-left: 15%;
+            min-height: 500px;
+          `}
+        ></iframe>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <iframe
+          src="https://storymaps.arcgis.com/stories/cc5da35cab6c457f8c59ffd1d58bb7c1"
+          frameborder="0"
+          css={css`
+            position: relative;
+            width: 70%;
+            margin-left: 15%;
             min-height: 500px;
           `}
         ></iframe>
