@@ -29,7 +29,7 @@ const FeedbackModal = () => {
             the form.
           </p>
           <Form data-netlify="true" name="feedbackform" method="POST">
-            <input type="hidden" name="feedbackform" value="contact" />
+            <input type="hidden" name="feedbackform" value="feedbackform" />
             <Form.Group controlId="QuestionOne">
               <Form.Label
                 css={css`
