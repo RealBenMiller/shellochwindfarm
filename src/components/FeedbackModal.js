@@ -28,6 +28,11 @@ const FeedbackModal = () => {
             it to us by email or post using the contact details at the end of
             the form.
           </p>
+          <form name="feedbackform" netlify netlify-honeypot="bot-field" hidden>
+            <input type="text" name="name" />
+            <input type="email" name="email" />
+            <textarea name="message"></textarea>
+          </form>
           <Form data-netlify="true" netlify name="feedbackform" method="POST">
             <input type="hidden" name="feedbackform" value="feedbackform" />
             <Form.Group controlId="QuestionOne">
@@ -189,6 +194,7 @@ const FeedbackModal = () => {
                 </div>
               ))}
             </Form.Group>
+            <Button type="submit">Submit</Button>
           </Form>
         </Modal.Body>
       </Modal>
