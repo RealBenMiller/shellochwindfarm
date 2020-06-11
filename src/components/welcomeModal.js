@@ -8,7 +8,14 @@ const WelcomeModal = () => {
 
   return (
     <>
-      <Modal onHide={handleClose}>
+      <Modal
+        css={css`
+          margin-top: 10vh;
+        `}
+        show={show}
+        onHide={handleClose}
+        size="lg"
+      >
         <Modal.Body closeButton>
           <h1>Welcome to the Exhibition</h1>
           <p>
@@ -19,7 +26,14 @@ const WelcomeModal = () => {
             look at the topics in any order you wish. When you have finished
             reading a topic, click anywhere outside the window to return to this
             main room. We hope that you will complete a questionnaire at the
-            end, so that we understand your views on the proposal
+            end, so that we understand your views on the proposal.
+          </p>
+          <h2>How it works</h2>
+          <p>
+            To use this virtual exhibition, click on the numbered button on each
+            board. This will bring up the information contained. From there, you
+            can use the arrow keys to go directly to the next board, or you can
+            click the background to return to the main room.
           </p>
         </Modal.Body>
       </Modal>

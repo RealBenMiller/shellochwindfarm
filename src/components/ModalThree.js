@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { jsx, css, Global } from "@emotion/core"
 import { Button, Modal } from "react-bootstrap"
 
+import StoryMapCarousel from "./Carousel"
+
 const ModalThree = () => {
   const [show, setShow] = useState(false)
   const handleClose = () => setShow(false)
@@ -30,20 +32,12 @@ const ModalThree = () => {
         css={css`
           margin-top: 10vh;
         `}
-        size="lg"
+        size="xl"
         show={show}
         onHide={handleClose}
       >
         <Modal.Body closeButton>
-          <iframe
-            src="https://storymaps.arcgis.com/stories/0302c6976d764ab495892b0a6413c569"
-            frameborder="0"
-            css={css`
-              position: relative;
-              width: 100%;
-              min-height: 500px;
-            `}
-          ></iframe>
+          <StoryMapCarousel number={2} />
         </Modal.Body>
       </Modal>
     </>
