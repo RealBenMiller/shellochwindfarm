@@ -208,7 +208,7 @@ const FeedbackModal = () => {
                 to collectively have up to 10% Community Ownership in the
                 Shelloch Wind Farm through a Profit Sharing Agreement. If your
                 local group falls within the ‘’Community of interest’’ (as
-                referenced on Exhibition Board 6) Would you like to receive
+                referenced on Exhibition Board 6), would you like to receive
                 further information on the Community Investment Opportunity?
               </Form.Label>
               {["radio"].map(type => (
@@ -305,13 +305,13 @@ const FeedbackModal = () => {
                 <div key={`inline-${type}`} className="mb-3">
                   <Form.Check
                     name="Seven-a"
-                    label="Clean Energy for future generations"
+                    label="Clean Energy for Future Generations"
                     type={type}
                     id={`inline-${type}-1`}
                   />
                   <Form.Check
                     name="Seven-a"
-                    label="Helping address the Climate Emergency"
+                    label="Helping Address the Climate Emergency"
                     type={type}
                     id={`inline-${type}-2`}
                   />
@@ -323,7 +323,7 @@ const FeedbackModal = () => {
                   />
                   <Form.Check
                     name="Seven-a"
-                    label="Locally produced Energy"
+                    label="Locally Produced Energy"
                     type={type}
                     id={`inline-${type}-3`}
                   />
@@ -335,7 +335,7 @@ const FeedbackModal = () => {
                   />
                   <Form.Check
                     name="Seven-a"
-                    label="Opportunity for local Community Groups to Invest"
+                    label="Opportunity for Local Community Groups to Invest"
                     type={type}
                     id={`inline-${type}-3`}
                   />
@@ -357,37 +357,37 @@ const FeedbackModal = () => {
                 <div key={`inline-${type}`} className="mb-3">
                   <Form.Check
                     name="Seven-b"
-                    label="Clean Energy for future generations"
+                    label="Impact on Tourism"
                     type={type}
                     id={`inline-${type}-1`}
                   />
                   <Form.Check
                     name="Seven-b"
-                    label="Helping address the Climate Emergency"
+                    label="Access Tracks"
                     type={type}
                     id={`inline-${type}-2`}
                   />
                   <Form.Check
                     name="Seven-b"
-                    label="Potential Community Benefits"
+                    label="Noise"
                     type={type}
                     id={`inline-${type}-3`}
                   />
                   <Form.Check
                     name="Seven-b"
-                    label="Locally produced Energy"
+                    label="Impact on Local Roads"
                     type={type}
                     id={`inline-${type}-3`}
                   />
                   <Form.Check
                     name="Seven-b"
-                    label="Support Scottish Government's Energy Strategy Targets"
+                    label="Impact on Wildlife"
                     type={type}
                     id={`inline-${type}-3`}
                   />
                   <Form.Check
                     name="Seven-b"
-                    label="Opportunity for local Community Groups to Invest"
+                    label="Visual Impact"
                     type={type}
                     id={`inline-${type}-3`}
                   />
