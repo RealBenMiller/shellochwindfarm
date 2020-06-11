@@ -15,7 +15,11 @@ const FeedbackModal = () => {
         size="lg"
         show={show}
       >
-        <Modal.Body closeButton>
+        <Modal.Body
+          css={css`
+            padding: 50px;
+          `}
+        >
           <h1>Have Your Say</h1>
           <h2>Shelloch Wind Farm Proposal</h2>
           <h2>Feedback Form</h2>
@@ -23,16 +27,11 @@ const FeedbackModal = () => {
             Thank you for taking the time to view our consultation materials for
             the proposed Shelloch Wind Farm. We would encourage you to provide
             your feedback on the proposals by completing this short
-            questionnaire. You can complete this electronically on our project
-            webpage (www.force9energy.com/projects/current/shelloch) or return
+            questionnaire. You can complete this electronically here or return
             it to us by email or post using the contact details at the end of
             the form.
           </p>
-          <form name="feedbackform" netlify netlify-honeypot="bot-field" hidden>
-            <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message"></textarea>
-          </form>
+
           <Form data-netlify="true" netlify name="feedbackform" method="POST">
             <input type="hidden" name="form-name" value="feedbackform" />
             <Form.Group controlId="QuestionOne">
@@ -193,7 +192,282 @@ const FeedbackModal = () => {
                   />
                 </div>
               ))}
+              <Form.Label>
+                If Yes, what would you like to see the fund used for?
+              </Form.Label>
+              <Form.Control as="textarea" rows="4" />
             </Form.Group>
+            <Form.Group controlId="QuestionFive">
+              <Form.Label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                5. Force 9 Energy’s project partner, EDF Renewables, is also
+                committed to providing an opportunity for local community groups
+                to collectively have up to 10% Community Ownership in the
+                Shelloch Wind Farm through a Profit Sharing Agreement. If your
+                local group falls within the ‘’Community of interest’’ (as
+                referenced on Exhibition Board 6) Would you like to receive
+                further information on the Community Investment Opportunity?
+              </Form.Label>
+              {["radio"].map(type => (
+                <div key={`inline-${type}`} className="mb-3">
+                  <Form.Check
+                    name="Five"
+                    inline
+                    label="Yes"
+                    type={type}
+                    id={`inline-${type}-1`}
+                  />
+                  <Form.Check
+                    name="Five"
+                    inline
+                    label="No"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                </div>
+              ))}
+              <Form.Label>
+                Your capital is at risk if you invest. Investments are not
+                covered by the Financial Services Compensation Scheme. For a
+                full risk warning, please contact Steven Park and a
+                representative from EDF Renewable Community Investment Ltd will
+                contact you. EDF Renewables is a trading name of EDF Renewables
+                Community Investment Limited which is an appointed
+                representative of Resolution Compliance Limited which is
+                authorised and regulated by the Financial Conduct Authority
+                (FRN:574048)
+              </Form.Label>
+            </Form.Group>
+            <Form.Group controlId="QuestionSix">
+              <Form.Label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                6. A previous application for the site was approved for seven
+                turbines, but our proposals will reduce this to five more
+                productive turbines which will generate significantly more
+                renewable energy than the prior consented application. Do you
+                support this reduction?
+              </Form.Label>
+              {["radio"].map(type => (
+                <div key={`inline-${type}`} className="mb-3">
+                  <Form.Check
+                    name="Six"
+                    inline
+                    label="Yes"
+                    type={type}
+                    id={`inline-${type}-1`}
+                  />
+                  <Form.Check
+                    name="Six"
+                    inline
+                    label="No"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                  <Form.Check
+                    name="Six"
+                    inline
+                    label="Don't Know"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                </div>
+              ))}
+            </Form.Group>
+            <Form.Group controlId="QuestionSeven">
+              <Form.Label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                7. Based upon what you have learned today, please tick the box
+                (es) below that reflect your views on the Shelloch Wind Farm
+                proposals:
+              </Form.Label>
+              <Form.Label>
+                Firstly, please tick the box(es) below that best reflect what
+                you consider to be the{" "}
+                <span
+                  css={css`
+                    font-weight: bold;
+                  `}
+                >
+                  positives
+                </span>{" "}
+                associated with the development:
+              </Form.Label>
+              {["radio"].map(type => (
+                <div key={`inline-${type}`} className="mb-3">
+                  <Form.Check
+                    name="Seven-a"
+                    label="Clean Energy for future generations"
+                    type={type}
+                    id={`inline-${type}-1`}
+                  />
+                  <Form.Check
+                    name="Seven-a"
+                    label="Helping address the Climate Emergency"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                  <Form.Check
+                    name="Seven-a"
+                    label="Potential Community Benefits"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-a"
+                    label="Locally produced Energy"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-a"
+                    label="Support Scottish Government's Energy Strategy Targets"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-a"
+                    label="Opportunity for local Community Groups to Invest"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                </div>
+              ))}
+              <Form.Label>
+                Secondly, please tick the box(es) below that best reflect any{" "}
+                <span
+                  css={css`
+                    font-weight: bold;
+                  `}
+                >
+                  concerns
+                </span>{" "}
+                you have regarding the proposals:
+              </Form.Label>
+
+              {["radio"].map(type => (
+                <div key={`inline-${type}`} className="mb-3">
+                  <Form.Check
+                    name="Seven-b"
+                    label="Clean Energy for future generations"
+                    type={type}
+                    id={`inline-${type}-1`}
+                  />
+                  <Form.Check
+                    name="Seven-b"
+                    label="Helping address the Climate Emergency"
+                    type={type}
+                    id={`inline-${type}-2`}
+                  />
+                  <Form.Check
+                    name="Seven-b"
+                    label="Potential Community Benefits"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-b"
+                    label="Locally produced Energy"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-b"
+                    label="Support Scottish Government's Energy Strategy Targets"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                  <Form.Check
+                    name="Seven-b"
+                    label="Opportunity for local Community Groups to Invest"
+                    type={type}
+                    id={`inline-${type}-3`}
+                  />
+                </div>
+              ))}
+            </Form.Group>
+            <Form.Group controlId="QuestionEight">
+              <Form.Label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                8. Do you have any other comments that you wish to raise in
+                connection with question 7 or anything else concerning the
+                Shelloch proposals?
+              </Form.Label>
+              <Form.Control as="textarea" rows="4" />
+            </Form.Group>
+            <p>
+              Please note that any comments made to Force 9 Energy are not
+              representations to the planning authority. Once Force 9 Energy and
+              their project partner, EDF Renewables, submits a planning
+              application, there will be an opportunity to make such
+              representations on that application to the planning authority.
+            </p>
+            <Form.Group controlId="ContactDetails">
+              <h2>Your Contact Details</h2>
+              <Form.Label>Name</Form.Label>
+              <Form.Control type="name" placeholder="Enter Name" required />
+              <Form.Label>Address</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows="3"
+                placeholder="Enter Address"
+                required
+              />
+              <Form.Label>Post Code</Form.Label>
+              <Form.Control
+                type="postcode"
+                placeholder="Enter Postcode"
+                required
+              />
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control type="email" placeholder="Enter email" required />
+            </Form.Group>
+            <h2>Force 9 Energy Contact Details</h2>
+            <p>
+              For more information or to return your feedback form, you can
+              contact us in the following ways:
+            </p>
+            <p>Submit this form</p>
+            <p>
+              Email:{" "}
+              <a href="mailto:steven@libertonecomms.co.uk">
+                steven@libertyonecomms.co.uk
+              </a>
+            </p>
+            <p>
+              Phone: 0122 4060 326 (during office hours, 9am-5pm, Monday to
+              Friday)
+            </p>
+            <p>Post:</p>
+            <p>Force 9 Energy, c/o Liberty One Communications</p>
+            <p>The Silver Fin Building</p>
+            <p>455 Union Street</p>
+            <p>Aberdeen, AB11 6DB</p>
+
+            <h4>Data Protection</h4>
+            <p>
+              In submitting this form, you consent to us storing and processing
+              your data, such as your name, home address and telephone numbers.
+              This personal data will only be stored and processed for the
+              purpose of compliance with our legal and regulatory obligations
+              and only accessible by a limited number of employees who need to
+              do so to carry out the requirements of their role. We will also
+              securely delete or destroy your data as soon as we no longer need
+              to store it. We are committed to safeguarding your privacy and to
+              complying in full with the General Data Protection Regulation
+              (GDPR) and our own internal Privacy Policy.
+            </p>
             <Button type="submit">Submit</Button>
           </Form>
         </Modal.Body>
