@@ -34,7 +34,7 @@ const FeedbackModal = () => {
             <textarea name="message"></textarea>
           </form>
           <Form data-netlify="true" netlify name="feedbackform" method="POST">
-            <input type="hidden" name="feedbackform" value="feedbackform" />
+            <input type="hidden" name="form-name" value="feedbackform" />
             <Form.Group controlId="QuestionOne">
               <Form.Label
                 css={css`
