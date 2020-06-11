@@ -28,7 +28,7 @@ const FeedbackModal = () => {
             it to us by email or post using the contact details at the end of
             the form.
           </p>
-          <Form data-netlify="true" name="feedbackform" method="POST">
+          <Form data-netlify="true" netlify name="feedbackform" method="POST">
             <input type="hidden" name="feedbackform" value="feedbackform" />
             <Form.Group controlId="QuestionOne">
               <Form.Label
