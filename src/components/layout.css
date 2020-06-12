@@ -1,5 +1,4 @@
 html {
-  font-family: proxima-nova, sans-serif;
   font-weight: 300;
   font-style: normal;
   -ms-text-size-adjust: 100%;
@@ -9,6 +8,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: proxima-nova, sans-serif !important;
 }
 article,
 aside,

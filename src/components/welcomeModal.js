@@ -15,6 +15,8 @@ const WelcomeModal = () => {
           h1 {
             font-size: 22px;
             border-bottom: 2px solid lightblue;
+            font-family: proxima-nova, sans-serif !important;
+            font-weight: bold;
           }
         `}
         show={show}

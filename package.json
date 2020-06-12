@@ -13,7 +13,7 @@
     "gatsby-plugin-emotion": "^4.3.1",
     "gatsby-plugin-manifest": "^2.4.2",
     "gatsby-plugin-offline": "^3.2.1",
-    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-sharp": "^2.6.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.1",
@@ -22,7 +22,7 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0",
+    "react-helmet": "^6.1.0",
     "react-indiana-drag-scroll": "^1.6.1",
     "react-scroll-box": "^0.3.5"
   },

@@ -18,6 +18,7 @@ const FeedbackModal = () => {
           h1 {
             font-size: 22px;
             border-bottom: 2px solid lightblue;
+            font-family: proxima-nova, sans-serif !important;
             font-weight: bold;
           }
           h2 {
@@ -430,6 +431,8 @@ const FeedbackModal = () => {
                 css={css`
             border-bottom: 2px solid lightblue;
             font-size: 20px;
+            font-family: proxima-nova, sans-serif !important;
+            font-weight: bold;
           }
         `}
               >
@@ -457,6 +460,8 @@ const FeedbackModal = () => {
               css={css`
                 border-bottom: 2px solid lightblue;
                 font-size: 20px;
+                font-family: proxima-nova, sans-serif !important;
+                font-weight: bold;
               `}
             >
               Force 9 Energy Contact Details
