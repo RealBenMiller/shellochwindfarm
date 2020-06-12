@@ -11,6 +11,18 @@ const FeedbackModal = () => {
       <Modal
         css={css`
           margin-top: 10vh;
+          font-size: 0.8em;
+          .modal-backdrop {
+            background-color: #efefef;
+          }
+          h1 {
+            font-size: 22px;
+            border-bottom: 2px solid lightblue;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 20px;
+          }
         `}
         size="lg"
         show={show}
@@ -414,7 +426,15 @@ const FeedbackModal = () => {
               representations on that application to the planning authority.
             </p>
             <Form.Group controlId="ContactDetails">
-              <h2>Your Contact Details</h2>
+              <h2
+                css={css`
+            border-bottom: 2px solid lightblue;
+            font-size: 20px;
+          }
+        `}
+              >
+                Your Contact Details
+              </h2>
               <Form.Label>Name</Form.Label>
               <Form.Control type="name" placeholder="Enter Name" required />
               <Form.Label>Address</Form.Label>
@@ -433,7 +453,14 @@ const FeedbackModal = () => {
               <Form.Label>Email Address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" required />
             </Form.Group>
-            <h2>Force 9 Energy Contact Details</h2>
+            <h2
+              css={css`
+                border-bottom: 2px solid lightblue;
+                font-size: 20px;
+              `}
+            >
+              Force 9 Energy Contact Details
+            </h2>
             <p>
               For more information or to return your feedback form, you can
               contact us in the following ways:
@@ -455,7 +482,14 @@ const FeedbackModal = () => {
             <p>455 Union Street</p>
             <p>Aberdeen, AB11 6DB</p>
 
-            <h4>Data Protection</h4>
+            <h4
+              css={css`
+                border-bottom: 2px solid lightblue;
+                font-size: 20px;
+              `}
+            >
+              Data Protection
+            </h4>
             <p>
               In submitting this form, you consent to us storing and processing
               your data, such as your name, home address and telephone numbers.

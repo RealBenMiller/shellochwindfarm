@@ -5,10 +5,10 @@ import Navigation from "../components/navigation"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div>
       <Navigation />
       {children}
-    </>
+    </div>
   )
 }
 

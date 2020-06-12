@@ -29,6 +29,11 @@ const Navigation = () => {
         <Button
           css={css`
             margin-left: 20px;
+            font-size: 16px;
+            
+    background-color: lightblue;
+    border: lightblue;
+}
             a {
               text-decoration: none;
               color: white;
@@ -45,6 +50,10 @@ const Navigation = () => {
         <Button
           css={css`
             margin-left: 20px;
+            font-size: 16px;
+
+            background-color: lightblue;
+            border: lightblue;
             a {
               text-decoration: none;
               color: white;
