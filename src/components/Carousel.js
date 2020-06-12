@@ -72,7 +72,7 @@ const StoryMapCarousel = props => {
       </Carousel.Item>
       <Carousel.Item>
         <iframe
-          src="https://storymaps.arcgis.com/stories/99af2e4040f94fe4add0c8eb6ff822c5"
+          src="https://storymaps.arcgis.com/stories/39a5c698e5e14272bee8f2a2ca475181"
           frameborder="0"
           css={css`
             position: relative;
@@ -84,7 +84,7 @@ const StoryMapCarousel = props => {
       </Carousel.Item>
       <Carousel.Item>
         <iframe
-          src="https://storymaps.arcgis.com/stories/783e8eda99d94acd8b7b22ab731c115d"
+          src="https://storymaps.arcgis.com/stories/99af2e4040f94fe4add0c8eb6ff822c5"
           frameborder="0"
           css={css`
             position: relative;
