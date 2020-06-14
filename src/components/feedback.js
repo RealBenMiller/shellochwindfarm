@@ -7,10 +7,14 @@ import { window, document } from "browser-monads"
 
 var initState = ""
 
-if (document.URL.indexOf("#click_approved") >= 0) {
-  initState = "open"
-} else {
-  initState = "closed"
+if (typeof document == !undefined) {
+  if (document.URL.indexOf("#click_approved") >= 0) {
+    console.log("yes")
+    initState = "open"
+  } else {
+    initState = "closed"
+    console.log("No")
+  }
 }
 
 const openCartAnimation = () =>
