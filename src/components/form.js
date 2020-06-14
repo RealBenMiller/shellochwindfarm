@@ -145,108 +145,15 @@ class Feedback extends React.Component {
             it to us by email or post using the contact details at the end of
             the form.
           </p>
-
-          <form data-netlify="true" name="feedback" method="post">
-            <input type="hidden" name="form-name" value="feedback" />
-
-            <h2
-              css={css`
-                border-bottom: 2px solid lightblue;
-                font-size: 20px;
-                font-family: proxima-nova, sans-serif !important;
-                font-weight: bold;
-              }
-            `}
-            >
-              Your Contact Details
-            </h2>
+          <form name="feedbackform" method="post" data-netlify="true" netlify>
             <label>Name</label>
             <input
-              className="inputbox"
               name="name"
               type="name"
               value={this.state.name}
               onChange={this.onChangeName}
               required
             />
-            <label>Address</label>
-            <textarea
-              className="inputbox"
-              name="address"
-              as="textarea"
-              rows="3"
-              required
-              value={this.state.address}
-              onChange={this.onChangeAddress}
-            />
-            <label>Post Code</label>
-            <input
-              className="inputbox"
-              name="postcode"
-              type="postcode"
-              required
-              value={this.state.postcode}
-              onChange={this.onChangePostcode}
-            />
-            <label>Email Address</label>
-            <input
-              className="inputbox"
-              name="email"
-              type="email"
-              placeholder="Enter email"
-              required
-            />
-            <h2
-              css={css`
-                border-bottom: 2px solid lightblue;
-                font-size: 20px;
-                font-family: proxima-nova, sans-serif !important;
-                font-weight: bold;
-              `}
-            >
-              Force 9 Energy Contact Details
-            </h2>
-            <p>
-              For more information or to return your feedback form, you can
-              contact us in the following ways:
-            </p>
-            <p>Submit this form</p>
-            <p>
-              Email:{" "}
-              <a href="mailto:steven@libertonecomms.co.uk">
-                steven@libertyonecomms.co.uk
-              </a>
-            </p>
-            <p>
-              Phone: 0122 4060 326 (during office hours, 9am-5pm, Monday to
-              Friday)
-            </p>
-            <p>Post:</p>
-            <p>Force 9 Energy, c/o Liberty One Communications</p>
-            <p>The Silver Fin Building</p>
-            <p>455 Union Street</p>
-            <p>Aberdeen, AB11 6DB</p>
-
-            <h4
-              css={css`
-                border-bottom: 2px solid lightblue;
-                font-size: 20px;
-              `}
-            >
-              Data Protection
-            </h4>
-            <p>
-              In submitting this form, you consent to us storing and processing
-              your data, such as your name, home address and telephone numbers.
-              This personal data will only be stored and processed for the
-              purpose of compliance with our legal and regulatory obligations
-              and only accessible by a limited number of employees who need to
-              do so to carry out the requirements of their role. We will also
-              securely delete or destroy your data as soon as we no longer need
-              to store it. We are committed to safeguarding your privacy and to
-              complying in full with the General Data Protection Regulation
-              (GDPR) and our own internal Privacy Policy.
-            </p>
             <button type="submit">Submit</button>
           </form>
         </div>
