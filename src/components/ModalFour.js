@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { jsx, css, Global } from "@emotion/core"
-import { Button, Modal, Tooltip } from "react-bootstrap"
+import { Button, Modal, OverlayTrigger, Tooltip } from "react-bootstrap"
 import StoryMapCarousel from "./Carousel"
 
 const ModalFour = () => {
