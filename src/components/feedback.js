@@ -93,12 +93,16 @@ const FeedbackForm = () => {
     constructor(props) {
       super(props)
       this.OnChangeOne = this.OnChangeOne.bind(this)
+      this.OnChangeTwo = this.OnChangeTwo.bind(this)
+      this.OnChangeThree = this.OnChangeThree.bind(this)
       this.onChangeName = this.onChangeName.bind(this)
       this.onChangeAddress = this.onChangeAddress.bind(this)
       this.onChangePostcode = this.onChangePostcode.bind(this)
 
       this.state = {
         OneA: "",
+        TwoA: "",
+        ThreeA: "",
         name: "",
         address: "",
         phone: "",
@@ -109,6 +113,14 @@ const FeedbackForm = () => {
 
     OnChangeOne(e) {
       this.setState({ OneA: e.target.value })
+    }
+
+    OnChangeTwo(e) {
+      this.setState({ TwoA: e.target.value })
+    }
+
+    OnChangeThree(e) {
+      this.setState({ ThreeA: e.target.value })
     }
 
     onChangeName(e) {
@@ -129,6 +141,8 @@ const FeedbackForm = () => {
       if (localStorage.getItem("user")) {
         this.setState({
           OneA: this.userData.OneA,
+          TwoA: this.userData.TwoA,
+          ThreeA: this.userData.ThreeA,
           name: this.userData.name,
           address: this.userData.address,
           postcode: this.userData.postcode,
@@ -136,6 +150,8 @@ const FeedbackForm = () => {
       } else {
         this.setState({
           OneA: "",
+          TwoA: "",
+          ThreeA: "",
           name: "",
           address: "",
           postcode: "",
