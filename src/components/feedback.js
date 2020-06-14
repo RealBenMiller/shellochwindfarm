@@ -7,7 +7,7 @@ import { window, document } from "browser-monads"
 
 var initState = "closed"
 
-if (typeof document == !undefined) {
+if (typeof document !== undefined) {
   if (document.URL.indexOf("#click_approved") >= 0) {
     console.log("yes")
     initState = "open"
