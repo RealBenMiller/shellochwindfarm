@@ -1,137 +1,36 @@
 import React, { useState } from "react"
 import { jsx, css, Global } from "@emotion/core"
-import { Carousel, Modal, Form, Button } from "react-bootstrap"
+import { Button, Modal, Form } from "react-bootstrap"
 
-const StoryMapCarousel = props => {
-  const [index, setIndex] = useState(props.number)
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex)
-  }
-
+const FeedbackForm = () => {
   return (
-    <Carousel
-      css={css`
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-          filter: invert(100%);
-        }
-      `}
-      pause={"hover"}
-      interval={500000}
-      autoplay={false}
-      activeIndex={index}
-      onSelect={handleSelect}
-    >
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/783e8eda99d94acd8b7b22ab731c115d"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/9f9c0cdeff284d52a0d38413fe03225b"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/0302c6976d764ab495892b0a6413c569"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/11c755611d6845c8a623827db26fdd62"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/39a5c698e5e14272bee8f2a2ca475181"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/99af2e4040f94fe4add0c8eb6ff822c5"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/8bdd8fc474f44c98a42a392f9587dd74"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/6ab4258b3e3e4789a30a9732e9e8938f"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <iframe
-          src="https://storymaps.arcgis.com/stories/cc5da35cab6c457f8c59ffd1d58bb7c1"
-          frameborder="0"
-          css={css`
-            position: relative;
-            width: 70%;
-            margin-left: 15%;
-            min-height: 500px;
-          `}
-        ></iframe>
-      </Carousel.Item>
-      <Carousel.Item>
+    <>
+      <div
+        id="feedbackform"
+        className="feedbackform"
+        css={css`
+          z-index: 9999;
+          background-color: white;
+          position: fixed;
+          top: 0;
+          left: -400px;
+          bottom: 0;
+          width: 400px;
+          font-size: 0.8em;
+          overflow-y: scroll;
+          transform: ;
+          transition: transform 1s;
+          h1 {
+            font-size: 22px;
+            border-bottom: 2px solid lightblue;
+            font-family: proxima-nova, sans-serif !important;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 20px;
+          }
+        `}
+      >
         <Button>Print this Form</Button>
         <h1>Have Your Say</h1>
         <h2>Shelloch Wind Farm Proposal</h2>
@@ -606,9 +505,9 @@ const StoryMapCarousel = props => {
           </p>
           <Button type="submit">Submit</Button>
         </Form>
-      </Carousel.Item>
-    </Carousel>
+      </div>
+    </>
   )
 }
 
-export default StoryMapCarousel
+export default FeedbackForm

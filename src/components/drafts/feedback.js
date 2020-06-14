@@ -1,7 +1,7 @@
 import React from "react"
 import { css, Global, ClassNames } from "@emotion/core"
 import styled from "@emotion/styled"
-import Layout from "../components/layout"
+import Layout from "../layout"
 import Exhibition from "../images/background.png"
 import ScrollContainer from "react-indiana-drag-scroll"
 import "bootstrap/dist/css/bootstrap.min.css"

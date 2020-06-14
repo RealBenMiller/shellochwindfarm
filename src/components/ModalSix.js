@@ -13,8 +13,8 @@ const ModalSix = () => {
       <Button
         css={css`
           position: absolute;
-          top: 84%;
-          left: 60.2%;
+          top: 81%;
+          left: 59%;
           height: 45px;
           width: 45px;
           border-radius: 50%;

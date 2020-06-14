@@ -14,8 +14,8 @@ const ModalThree = () => {
       <Button
         css={css`
           position: absolute;
-          top: 84%;
-          left: 33.4%;
+          top: 81%;
+          left: 35.3%;
           height: 45px;
           width: 45px;
           border-radius: 50%;

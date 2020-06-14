@@ -6,7 +6,11 @@ import { Helmet } from "react-helmet"
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div
+      css={css`
+        max-height: 90vh;
+      `}
+    >
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/dgt0hey.css" />
       </Helmet>

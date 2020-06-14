@@ -13,8 +13,8 @@ const ModalNine = () => {
       <Button
         css={css`
           position: absolute;
-          top: 81%;
-          left: 77.5%;
+          top: 15%;
+          left: 84%;
           height: 45px;
           width: 45px;
           border-radius: 50%;
@@ -25,7 +25,7 @@ const ModalNine = () => {
         `}
         onClick={handleShow}
       >
-        9
+        10
       </Button>
       <Modal
         css={css`

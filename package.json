@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@xstate/react": "^0.8.1",
     "bootstrap": "^4.5.0",
     "gatsby": "^2.21.22",
     "gatsby-image": "^2.4.3",
@@ -24,7 +25,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-indiana-drag-scroll": "^1.6.1",
-    "react-scroll-box": "^0.3.5"
+    "react-scroll-box": "^0.3.5",
+    "xstate": "^4.10.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"

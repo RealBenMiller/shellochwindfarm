@@ -14,7 +14,7 @@ const ModalFive = () => {
         css={css`
           position: absolute;
           top: 22%;
-          left: 54.5%;
+          left: 54%;
           height: 45px;
           width: 45px;
           border-radius: 50%;

@@ -2,8 +2,12 @@ import React from "react"
 import { jsx, css, Global } from "@emotion/core"
 import Logo from "../images/logo.jpg"
 import { Button } from "react-bootstrap"
+import FeedbackForm from "../components/feedback"
 
 const Navigation = () => {
+  // function openNav() {
+  //   document.getElementById("feedbackform").css.right = "250px"
+  // }
   return (
     <>
       <div
@@ -26,47 +30,7 @@ const Navigation = () => {
           src={Logo}
         />
 
-        <Button
-          css={css`
-            margin-left: 20px;
-            font-size: 16px;
-            
-    background-color: lightblue;
-    border: lightblue;
-}
-            a {
-              text-decoration: none;
-              color: white;
-            }
-          `}
-        >
-          <a
-            href="
-          /"
-          >
-            Virtual Exhibition
-          </a>
-        </Button>
-        <Button
-          css={css`
-            margin-left: 20px;
-            font-size: 16px;
-
-            background-color: lightblue;
-            border: lightblue;
-            a {
-              text-decoration: none;
-              color: white;
-            }
-          `}
-        >
-          <a
-            href="
-          /feedback"
-          >
-            Provide Feedback
-          </a>
-        </Button>
+        <FeedbackForm />
       </div>
     </>
   )
