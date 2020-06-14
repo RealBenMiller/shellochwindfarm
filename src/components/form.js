@@ -172,7 +172,7 @@ class Feedback extends React.Component {
               >
                 <label className="radio">
                   <input
-                    name="one"
+                    name="oneyes"
                     type="radio"
                     value="yes"
                     checked={this.state.OneA === "yes"}
@@ -188,7 +188,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="one"
+                    name="oneno"
                     type="radio"
                     value="no"
                     checked={this.state.OneA === "no"}
@@ -204,7 +204,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="one"
+                    name="onedk"
                     type="radio"
                     value="dk"
                     checked={this.state.OneA === "dk"}
@@ -242,7 +242,7 @@ class Feedback extends React.Component {
               >
                 <label className="radio">
                   <input
-                    name="two"
+                    name="two1"
                     type="radio"
                     value="1"
                     checked={this.state.TwoA === "1"}
@@ -258,7 +258,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="two"
+                    name="two2"
                     type="radio"
                     value="2"
                     checked={this.state.TwoA === "2"}
@@ -274,7 +274,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="two"
+                    name="two3"
                     type="radio"
                     value="3"
                     checked={this.state.TwoA === "3"}
@@ -290,7 +290,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="two"
+                    name="two4"
                     type="radio"
                     value="4"
                     checked={this.state.TwoA === "4"}
@@ -306,7 +306,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="two"
+                    name="two5"
                     type="radio"
                     value="5"
                     checked={this.state.TwoA === "5"}
@@ -344,7 +344,7 @@ class Feedback extends React.Component {
               >
                 <label className="radio">
                   <input
-                    name="three"
+                    name="threeyes"
                     type="radio"
                     value="yes"
                     checked={this.state.ThreeA === "yes"}
@@ -360,7 +360,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="three"
+                    name="threeno"
                     type="radio"
                     value="no"
                     checked={this.state.ThreeA === "no"}
@@ -376,7 +376,7 @@ class Feedback extends React.Component {
                 </label>
                 <label className="radio">
                   <input
-                    name="three"
+                    name="threedk"
                     type="radio"
                     value="dk"
                     checked={this.state.ThreeA === "dk"}
