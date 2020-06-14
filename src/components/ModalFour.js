@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { jsx, css, Global } from "@emotion/core"
-import { Button, Modal } from "react-bootstrap"
+import { Button, Modal, Tooltip } from "react-bootstrap"
 import StoryMapCarousel from "./Carousel"
 
 const ModalFour = () => {
@@ -10,23 +10,36 @@ const ModalFour = () => {
 
   return (
     <>
-      <Button
-        css={css`
-          position: absolute;
-          top: 22%;
-          left: 43.6%;
-          height: 45px;
-          width: 45px;
-          border-radius: 50%;
-          background-color: white;
-          color: blue;
-          font-size: 14px;
-          line-height: 22px;
-        `}
-        onClick={handleShow}
+      <OverlayTrigger
+        placement="top"
+        overlay={
+          <Tooltip
+            css={css`
+              background-color: lightblue;
+            `}
+          >
+            Climate emergency
+          </Tooltip>
+        }
       >
-        4
-      </Button>
+        <Button
+          css={css`
+            position: absolute;
+            top: 22%;
+            left: 43.6%;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            background-color: white;
+            color: blue;
+            font-size: 14px;
+            line-height: 22px;
+          `}
+          onClick={handleShow}
+        >
+          4
+        </Button>
+      </OverlayTrigger>
       <Modal
         css={css`
           margin-top: 10vh;

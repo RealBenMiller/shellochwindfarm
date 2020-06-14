@@ -145,7 +145,7 @@ class Feedback extends React.Component {
             it to us by email or post using the contact details at the end of
             the form.
           </p>
-          <form name="feedbackform" method="post" data-netlify="true" netlify>
+          <form name="feedbackform" method="POST" data-netlify="true" netlify>
             <input type="hidden" name="form-name" value="feedbackform" />
             <label>Name</label>
             <input
@@ -155,7 +155,7 @@ class Feedback extends React.Component {
               onChange={this.onChangeName}
               required
             />
-            <button type="submit">Submit</button>
+            <input type="submit" value="submit"></input>
           </form>
         </div>
       </div>
