@@ -3,11 +3,9 @@ import { css } from "@emotion/core"
 import { useMachine } from "@xstate/react"
 import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
-import { window, document } from "browser-monads"
-
-var initState = "closed"
 
 if (typeof document !== undefined) {
+  var initState = "closed"
   if (document.URL.indexOf("#click_approved") >= 0) {
     console.log("yes")
     initState = "open"
