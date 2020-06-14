@@ -1,4 +1,4 @@
-import React, { useState, Fragment, Component } from "react"
+import React, { Component } from "react"
 import { css } from "@emotion/core"
 import { Button } from "react-bootstrap"
 
@@ -126,13 +126,13 @@ class Feedback extends React.Component {
               padding-bottom: 10px;
             `}
           >
-            <Button
+            <button
               css={css`
                 margin: 0 auto;
               `}
             >
               Print this Form
-            </Button>
+            </button>
           </div>
           <h1>Have Your Say</h1>
           <h2>Shelloch Wind Farm Proposal</h2>
