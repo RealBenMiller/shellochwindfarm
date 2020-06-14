@@ -13,7 +13,7 @@ if (typeof document == !undefined) {
     initState = "open"
   } else {
     initState = "closed"
-    console.log("No")
+    console.log("Nope")
   }
 }
 
