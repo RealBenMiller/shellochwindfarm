@@ -259,6 +259,174 @@ const FeedbackForm = () => {
               }
             `}
               >
+                {/* QUESTION TWO */}
+                <label
+                  css={css`
+                    font-weight: bold;
+                  `}
+                >
+                  2. On a scale of 1-5 how concerned are you about the potential
+                  effects of climate change, 1 being unconcerned and 5 being
+                  very concerned?
+                </label>
+                <div
+                  css={css`
+                    label {
+                      display: inline-block;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                    }
+                  `}
+                >
+                  <label className="radio">
+                    <input
+                      name="two"
+                      type="radio"
+                      value="1"
+                      checked={this.state.TwoA === "1"}
+                      onChange={this.OnChangeTwo}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      1
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="two"
+                      type="radio"
+                      value="2"
+                      checked={this.state.TwoA === "2"}
+                      onChange={this.OnChangeTwo}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      2
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="two"
+                      type="radio"
+                      value="3"
+                      checked={this.state.TwoA === "3"}
+                      onChange={this.OnChangeTwo}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      3
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="two"
+                      type="radio"
+                      value="4"
+                      checked={this.state.TwoA === "4"}
+                      onChange={this.OnChangeTwo}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      4
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="two"
+                      type="radio"
+                      value="5"
+                      checked={this.state.TwoA === "5"}
+                      onChange={this.OnChangeTwo}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      5
+                    </span>
+                  </label>
+                </div>
+                {/* Question Three */}
+                <label
+                  css={css`
+                    font-weight: bold;
+                  `}
+                >
+                  3. Do you consider that Onshore Wind should play an important
+                  role in addressing the Climate Emergencies which were declared
+                  by the Scottish Government and the Stirling Council in 2019?
+                </label>
+                <div
+                  css={css`
+                    label {
+                      display: inline-block;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                    }
+                  `}
+                >
+                  <label className="radio">
+                    <input
+                      name="three"
+                      type="radio"
+                      value="yes"
+                      checked={this.state.ThreeA === "yes"}
+                      onChange={this.OnChangeThree}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      Yes
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="three"
+                      type="radio"
+                      value="no"
+                      checked={this.state.ThreeA === "no"}
+                      onChange={this.OnChangeThree}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      No
+                    </span>
+                  </label>
+                  <label className="radio">
+                    <input
+                      name="three"
+                      type="radio"
+                      value="dk"
+                      checked={this.state.ThreeA === "dk"}
+                      onChange={this.OnChangeThree}
+                    />
+                    <span
+                      css={css`
+                        padding-left: 10px;
+                      `}
+                    >
+                      Don't Know
+                    </span>
+                  </label>
+                </div>
                 Your Contact Details
               </h2>
               <label>Name</label>

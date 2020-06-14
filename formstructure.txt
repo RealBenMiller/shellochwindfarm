@@ -71,7 +71,6 @@
               </div>
             </fieldset>
             {/* QUESTION TWO */}
-            <fieldset>
               <label
                 css={css`
                   font-weight: bold;
@@ -171,9 +170,7 @@
                   </span>
                 </label>
               </div>
-            </fieldset>
             {/* Question Three */}
-            <fieldset>
               <label
                 css={css`
                   font-weight: bold;
@@ -241,7 +238,6 @@
                   </span>
                 </label>
               </div>
-            </fieldset>
 
 
              <form data-netlify="true" name="feedback" method="post">
