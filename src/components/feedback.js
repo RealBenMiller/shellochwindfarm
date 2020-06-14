@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import { useMachine } from "@xstate/react"
 import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
+import { window, document } from "browser-monads"
 
 var initState = ""
 
