@@ -5,7 +5,7 @@ import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
 import { window, document } from "browser-monads"
 
-var initState = ""
+var initState = "closed"
 
 if (typeof document == !undefined) {
   if (document.URL.indexOf("#click_approved") >= 0) {
