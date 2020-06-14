@@ -146,247 +146,252 @@ class Feedback extends React.Component {
             the form.
           </p>
 
-          <form data-netlify="true" netlify name="feedbackform" method="POST">
+          <form data-netlify="true" netlify name="feedback" method="POST">
             <input type="hidden" name="form-name" value="feedbackform" />
 
             {/* Question One */}
-            <label
-              css={css`
-                font-weight: bold;
-              `}
-            >
-              1. Recent lockdown procedures have resulted in less pollution and
-              cleaner air. Do you agree that the post-lockdown recovery should
-              focus on building a greener and cleaner economy for Scotland?
-            </label>
-            <div
-              css={css`
-                label {
-                  display: inline-block;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                }
-              `}
-            >
-              <label className="radio">
-                <input
-                  name="one"
-                  type="radio"
-                  value="yes"
-                  checked={this.state.OneA === "yes"}
-                  onChange={this.OnChangeOne}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  Yes
-                </span>
+            <fieldset>
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                1. Recent lockdown procedures have resulted in less pollution
+                and cleaner air. Do you agree that the post-lockdown recovery
+                should focus on building a greener and cleaner economy for
+                Scotland?
               </label>
-              <label className="radio">
-                <input
-                  name="one"
-                  type="radio"
-                  value="no"
-                  checked={this.state.OneA === "no"}
-                  onChange={this.OnChangeOne}
-                />
-                <span
-                  css={css`
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
                     padding-left: 10px;
-                  `}
-                >
-                  No
-                </span>
-              </label>
-              <label className="radio">
-                <input
-                  name="one"
-                  type="radio"
-                  value="dk"
-                  checked={this.state.OneA === "dk"}
-                  onChange={this.OnChangeOne}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  Don't Know
-                </span>
-              </label>
-            </div>
-
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="one"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.OneA === "yes"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="one"
+                    type="radio"
+                    value="no"
+                    checked={this.state.OneA === "no"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="one"
+                    type="radio"
+                    value="dk"
+                    checked={this.state.OneA === "dk"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Don't Know
+                  </span>
+                </label>
+              </div>
+            </fieldset>
             {/* QUESTION TWO */}
-            <label
-              css={css`
-                font-weight: bold;
-              `}
-            >
-              2. On a scale of 1-5 how concerned are you about the potential
-              effects of climate change, 1 being unconcerned and 5 being very
-              concerned?
-            </label>
-            <div
-              css={css`
-                label {
-                  display: inline-block;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                }
-              `}
-            >
-              <label className="radio">
-                <input
-                  name="two"
-                  type="radio"
-                  value="1"
-                  checked={this.state.TwoA === "1"}
-                  onChange={this.OnChangeTwo}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  1
-                </span>
+            <fieldset>
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                2. On a scale of 1-5 how concerned are you about the potential
+                effects of climate change, 1 being unconcerned and 5 being very
+                concerned?
               </label>
-              <label className="radio">
-                <input
-                  name="two"
-                  type="radio"
-                  value="2"
-                  checked={this.state.TwoA === "2"}
-                  onChange={this.OnChangeTwo}
-                />
-                <span
-                  css={css`
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
                     padding-left: 10px;
-                  `}
-                >
-                  2
-                </span>
-              </label>
-              <label className="radio">
-                <input
-                  name="two"
-                  type="radio"
-                  value="3"
-                  checked={this.state.TwoA === "3"}
-                  onChange={this.OnChangeTwo}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  3
-                </span>
-              </label>
-              <label className="radio">
-                <input
-                  name="two"
-                  type="radio"
-                  value="4"
-                  checked={this.state.TwoA === "4"}
-                  onChange={this.OnChangeTwo}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  4
-                </span>
-              </label>
-              <label className="radio">
-                <input
-                  name="two"
-                  type="radio"
-                  value="5"
-                  checked={this.state.TwoA === "5"}
-                  onChange={this.OnChangeTwo}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  5
-                </span>
-              </label>
-            </div>
-
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="two"
+                    type="radio"
+                    value="1"
+                    checked={this.state.TwoA === "1"}
+                    onChange={this.OnChangeTwo}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    1
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="two"
+                    type="radio"
+                    value="2"
+                    checked={this.state.TwoA === "2"}
+                    onChange={this.OnChangeTwo}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    2
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="two"
+                    type="radio"
+                    value="3"
+                    checked={this.state.TwoA === "3"}
+                    onChange={this.OnChangeTwo}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    3
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="two"
+                    type="radio"
+                    value="4"
+                    checked={this.state.TwoA === "4"}
+                    onChange={this.OnChangeTwo}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    4
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="two"
+                    type="radio"
+                    value="5"
+                    checked={this.state.TwoA === "5"}
+                    onChange={this.OnChangeTwo}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    5
+                  </span>
+                </label>
+              </div>
+            </fieldset>
             {/* Question Three */}
-            <label
-              css={css`
-                font-weight: bold;
-              `}
-            >
-              3. Do you consider that Onshore Wind should play an important role
-              in addressing the Climate Emergencies which were declared by the
-              Scottish Government and the Stirling Council in 2019?
-            </label>
-            <div
-              css={css`
-                label {
-                  display: inline-block;
-                  padding-left: 10px;
-                  padding-right: 10px;
-                }
-              `}
-            >
-              <label className="radio">
-                <input
-                  name="three"
-                  type="radio"
-                  value="yes"
-                  checked={this.state.ThreeA === "yes"}
-                  onChange={this.OnChangeThree}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  Yes
-                </span>
+            <fieldset>
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                3. Do you consider that Onshore Wind should play an important
+                role in addressing the Climate Emergencies which were declared
+                by the Scottish Government and the Stirling Council in 2019?
               </label>
-              <label className="radio">
-                <input
-                  name="three"
-                  type="radio"
-                  value="no"
-                  checked={this.state.ThreeA === "no"}
-                  onChange={this.OnChangeThree}
-                />
-                <span
-                  css={css`
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
                     padding-left: 10px;
-                  `}
-                >
-                  No
-                </span>
-              </label>
-              <label className="radio">
-                <input
-                  name="three"
-                  type="radio"
-                  value="dk"
-                  checked={this.state.ThreeA === "dk"}
-                  onChange={this.OnChangeThree}
-                />
-                <span
-                  css={css`
-                    padding-left: 10px;
-                  `}
-                >
-                  Don't Know
-                </span>
-              </label>
-            </div>
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="three"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.ThreeA === "yes"}
+                    onChange={this.OnChangeThree}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="three"
+                    type="radio"
+                    value="no"
+                    checked={this.state.ThreeA === "no"}
+                    onChange={this.OnChangeThree}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="three"
+                    type="radio"
+                    value="dk"
+                    checked={this.state.ThreeA === "dk"}
+                    onChange={this.OnChangeThree}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Don't Know
+                  </span>
+                </label>
+              </div>
+            </fieldset>
             <h2
               css={css`
                 border-bottom: 2px solid lightblue;
