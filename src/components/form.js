@@ -146,6 +146,7 @@ class Feedback extends React.Component {
             the form.
           </p>
           <form name="feedbackform" method="post" data-netlify="true" netlify>
+            <input type="hidden" name="form-name" value="feedbackform" />
             <label>Name</label>
             <input
               name="name"
