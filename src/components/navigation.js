@@ -26,7 +26,25 @@ const Navigation = () => {
           height="50"
           src={Logo}
         />
-
+        <Button
+          css={css`
+            margin-left: 20px;
+            @media (max-width: 500px) {
+              font-size: 10px;
+            }
+            @media (min-width: 501px) {
+              font-size: 16px;
+            }
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          `}
+        >
+          <a href="http://www.force9energy.com/projects/current/shelloch">
+            Project Website
+          </a>
+        </Button>
         <FeedbackForm />
       </div>
     </>

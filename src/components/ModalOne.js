@@ -10,18 +10,7 @@ const ModalOne = () => {
 
   return (
     <>
-      <OverlayTrigger
-        placement="top"
-        overlay={
-          <Tooltip
-            css={css`
-              background-color: lightblue;
-            `}
-          >
-            Introduction
-          </Tooltip>
-        }
-      >
+      <OverlayTrigger placement="top" overlay={<Tooltip>Introduction</Tooltip>}>
         <Button
           css={css`
             position: absolute;

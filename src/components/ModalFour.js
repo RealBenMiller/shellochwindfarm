@@ -12,15 +12,7 @@ const ModalFour = () => {
     <>
       <OverlayTrigger
         placement="top"
-        overlay={
-          <Tooltip
-            css={css`
-              background-color: lightblue;
-            `}
-          >
-            Climate emergency
-          </Tooltip>
-        }
+        overlay={<Tooltip>Climate emergency</Tooltip>}
       >
         <Button
           css={css`

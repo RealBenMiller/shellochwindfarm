@@ -74,6 +74,12 @@ const FeedbackForm = () => {
         <Button
           css={css`
             margin-left: 20px;
+            @media (max-width: 500px) {
+              font-size: 10px;
+            }
+            @media (min-width: 501px) {
+              font-size: 16px;
+            }
           `}
           id="open"
           onClick={() => {

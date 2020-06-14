@@ -13,6 +13,7 @@ const WelcomeModal = () => {
           z-index: 9999;
           margin-top: 10vh;
           font-size: 0.8em;
+          color: lightblue;
           h1 {
             font-size: 22px;
             border-bottom: 2px solid lightblue;
@@ -27,14 +28,15 @@ const WelcomeModal = () => {
         <Modal.Body closeButton>
           <h1>Welcome to the Exhibition</h1>
           <p>
-            Welcome to the online consultation for Shelloch Wind Farm. We have
-            numbered each of the topics in suggested reading order, from 1 to 8.
-            However, you are free to look at the topics in any order you wish.
-            You can navigate between topics using the arrows either side of the
-            content. When you have finished reading a topic, click anywhere
-            outside the window to return to this main room. We hope that you
-            will complete a questionnaire at the end, so that we understand your
-            views on the proposal. Click anywhere to begin.
+            Thank you for taking the time to visit our Virtual Consultation Room
+            and view the proposals for Shelloch. We have developed an
+            interactive Story Map which is set out over 9 Boards. Whilst we have
+            numbered them in order please feel free to read them in whatever
+            order you prefer. You can also easily click between boards using the
+            arrows at the side of each board. We would also welcome your
+            comments and feedback and would appreciate if you could take the
+            time to complete a Feedback Form. To work your way through the
+            exhibition, scroll to the right to see more boards.
           </p>
         </Modal.Body>
       </Modal>

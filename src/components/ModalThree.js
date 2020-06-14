@@ -13,15 +13,7 @@ const ModalThree = () => {
     <>
       <OverlayTrigger
         placement="top"
-        overlay={
-          <Tooltip
-            css={css`
-              background-color: lightblue;
-            `}
-          >
-            Project Developers
-          </Tooltip>
-        }
+        overlay={<Tooltip>Project Developers</Tooltip>}
       >
         <Button
           css={css`

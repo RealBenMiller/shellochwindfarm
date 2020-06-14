@@ -10,18 +10,7 @@ const ModalTwo = () => {
 
   return (
     <>
-      <OverlayTrigger
-        placement="top"
-        overlay={
-          <Tooltip
-            css={css`
-              background-color: lightblue;
-            `}
-          >
-            Site Context
-          </Tooltip>
-        }
-      >
+      <OverlayTrigger placement="top" overlay={<Tooltip>Site Context</Tooltip>}>
         <Button
           css={css`
             position: absolute;
