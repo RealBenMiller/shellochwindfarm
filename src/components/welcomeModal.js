@@ -10,6 +10,7 @@ const WelcomeModal = () => {
     <>
       <Modal
         css={css`
+          z-index: 9999;
           margin-top: 10vh;
           font-size: 0.8em;
           h1 {
