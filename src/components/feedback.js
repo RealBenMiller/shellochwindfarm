@@ -2,17 +2,16 @@ import React, { useState, Fragment, Component } from "react"
 import { css } from "@emotion/core"
 import { useMachine } from "@xstate/react"
 import { Machine } from "xstate"
-import Feedback from "../components/form"
-import { Button } from "react-bootstrap"
+import { Form, Button } from "react-bootstrap"
 
 const openCartAnimation = () =>
   new Promise((resolve, reject) => {
-    resolve(true)
+    setTimeout(() => resolve(true), 1000)
   })
 
 const closeCartAnimation = () =>
   new Promise((resolve, reject) => {
-    resolve(true)
+    setTimeout(() => resolve(true), 1000)
   })
 
 const formMachine = Machine({
@@ -22,7 +21,7 @@ const formMachine = Machine({
   states: {
     closed: {
       on: {
-        OPEN: "opening",
+        OPEN: "open",
       },
     },
     opening: {
@@ -34,7 +33,7 @@ const formMachine = Machine({
     },
     open: {
       on: {
-        CLOSE: "closing",
+        CLOSE: "closed",
       },
     },
     closing: {
@@ -55,52 +54,27 @@ const formMachine = Machine({
 const FeedbackForm = () => {
   const [state, send] = useMachine(formMachine)
 
-  const FormWrapper = () => (
-    <div
-      css={css`
-        display: block;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-      `}
-    >
-      <Feedback />
-    </div>
-  )
-
   const FormButton = () => {
     if (state.matches("open")) {
       return (
-        <>
-          <Button
-            css={css`
-              margin-left: 50px;
-            `}
-            onClick={() => {
-              send("CLOSE")
-            }}
-          >
-            Hide Form
-          </Button>
-          <FormWrapper />
-        </>
+        <button
+          onClick={() => {
+            send("CLOSE")
+          }}
+        >
+          Hide Form
+        </button>
       )
     }
     if (state.matches("closed")) {
       return (
-        <>
-          <Button
-            css={css`
-              margin-left: 50px;
-            `}
-            onClick={() => {
-              send("OPEN")
-            }}
-          >
-            Show Form
-          </Button>
-        </>
+        <button
+          onClick={() => {
+            send("OPEN")
+          }}
+        >
+          Show Form
+        </button>
       )
     }
 
@@ -113,11 +87,307 @@ const FeedbackForm = () => {
     }
   }
 
+  class Feedback extends React.Component {
+    userData
+
+    constructor(props) {
+      super(props)
+      this.OnChangeOne = this.OnChangeOne.bind(this)
+      this.onChangeName = this.onChangeName.bind(this)
+      this.onChangeAddress = this.onChangeAddress.bind(this)
+      this.onChangePostcode = this.onChangePostcode.bind(this)
+
+      this.state = {
+        OneA: "",
+        name: "",
+        address: "",
+        phone: "",
+      }
+    }
+
+    //form Events
+
+    OnChangeOne(e) {
+      this.setState({ OneA: e.target.value })
+    }
+
+    onChangeName(e) {
+      this.setState({ name: e.target.value })
+    }
+
+    onChangeAddress(e) {
+      this.setState({ address: e.target.value })
+    }
+
+    onChangePostcode(e) {
+      this.setState({ postcode: e.target.value })
+    }
+
+    //React Life Cycle
+    componentDidMount() {
+      this.userData = JSON.parse(localStorage.getItem("user"))
+      if (localStorage.getItem("user")) {
+        this.setState({
+          OneA: this.userData.OneA,
+          name: this.userData.name,
+          address: this.userData.address,
+          postcode: this.userData.postcode,
+        })
+      } else {
+        this.setState({
+          OneA: "",
+          name: "",
+          address: "",
+          postcode: "",
+        })
+      }
+    }
+
+    componentWillUpdate(nextProps, nextState) {
+      localStorage.setItem("user", JSON.stringify(nextState))
+    }
+
+    render() {
+      return (
+        <div>
+          <div className={state.matches("open") ? "base open" : "base hidden"}>
+            <style>
+              {`.base {                
+                z-index: 9999;
+                background-color: white;
+                position: fixed;
+                top: 0;
+                right: 400px;
+                bottom: 0;
+                width: 400px;
+                font-size: 0.8em;
+                overflow-y: scroll;
+                transform: ;
+                transition: transform 1s;
+                h1 {
+                font-size: 22px;
+                border-bottom: 2px solid lightblue;
+                font-family: proxima-nova, sans-serif !important;
+                font-weight: bold;
+                }
+                h2 {
+                font-size: 20px;
+                }
+              }
+              .open {
+                right: 0px;
+              }
+              .hidden {
+                  right: -400px;
+              }
+              `}
+            </style>
+            <Button>Print this Form</Button>
+            <h1>Have Your Say</h1>
+            <h2>Shelloch Wind Farm Proposal</h2>
+            <h2>Feedback Form</h2>
+            <p>
+              Thank you for taking the time to view our consultation materials
+              for the proposed Shelloch Wind Farm. We would encourage you to
+              provide your feedback on the proposals by completing this short
+              questionnaire. You can complete this electronically here or return
+              it to us by email or post using the contact details at the end of
+              the form.
+            </p>
+
+            <form data-netlify="true" netlify name="feedbackform" method="POST">
+              <input type="hidden" name="form-name" value="feedbackform" />
+              <label
+                css={css`
+                  font-weight: bold;
+                  label {
+                  }
+                `}
+              >
+                1. Recent lockdown procedures have resulted in less pollution
+                and cleaner air. Do you agree that the post-lockdown recovery
+                should focus on building a greener and cleaner economy for
+                Scotland?
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label>
+                  <input
+                    name="one"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.OneA === "yes"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span>Yes</span>
+                </label>
+                <label>
+                  <input
+                    name="one"
+                    type="radio"
+                    value="no"
+                    checked={this.state.OneA === "no"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span>No</span>
+                </label>
+                <label>
+                  <input
+                    name="one"
+                    type="radio"
+                    value="dk"
+                    checked={this.state.OneA === "dk"}
+                    onChange={this.OnChangeOne}
+                  />
+                  <span>Don't Know</span>
+                </label>
+              </div>
+
+              <h2
+                css={css`
+                border-bottom: 2px solid lightblue;
+                font-size: 20px;
+                font-family: proxima-nova, sans-serif !important;
+                font-weight: bold;
+              }
+            `}
+              >
+                Your Contact Details
+              </h2>
+              <label>Name</label>
+              <input
+                name="name"
+                type="name"
+                value={this.state.name}
+                onChange={this.onChangeName}
+                required
+              />
+              <label>Address</label>
+              <textarea
+                name="address"
+                as="textarea"
+                rows="3"
+                required
+                value={this.state.address}
+                onChange={this.onChangeAddress}
+              />
+              <label>Post Code</label>
+              <input
+                name="postcode"
+                type="postcode"
+                required
+                value={this.state.postcode}
+                onChange={this.onChangePostcode}
+              />
+              <label>Email Address</label>
+              <input
+                name="email"
+                type="email"
+                placeholder="Enter email"
+                required
+              />
+              <h2
+                css={css`
+                  border-bottom: 2px solid lightblue;
+                  font-size: 20px;
+                  font-family: proxima-nova, sans-serif !important;
+                  font-weight: bold;
+                `}
+              >
+                Force 9 Energy Contact Details
+              </h2>
+              <p>
+                For more information or to return your feedback form, you can
+                contact us in the following ways:
+              </p>
+              <p>Submit this form</p>
+              <p>
+                Email:{" "}
+                <a href="mailto:steven@libertonecomms.co.uk">
+                  steven@libertyonecomms.co.uk
+                </a>
+              </p>
+              <p>
+                Phone: 0122 4060 326 (during office hours, 9am-5pm, Monday to
+                Friday)
+              </p>
+              <p>Post:</p>
+              <p>Force 9 Energy, c/o Liberty One Communications</p>
+              <p>The Silver Fin Building</p>
+              <p>455 Union Street</p>
+              <p>Aberdeen, AB11 6DB</p>
+
+              <h4
+                css={css`
+                  border-bottom: 2px solid lightblue;
+                  font-size: 20px;
+                `}
+              >
+                Data Protection
+              </h4>
+              <p>
+                In submitting this form, you consent to us storing and
+                processing your data, such as your name, home address and
+                telephone numbers. This personal data will only be stored and
+                processed for the purpose of compliance with our legal and
+                regulatory obligations and only accessible by a limited number
+                of employees who need to do so to carry out the requirements of
+                their role. We will also securely delete or destroy your data as
+                soon as we no longer need to store it. We are committed to
+                safeguarding your privacy and to complying in full with the
+                General Data Protection Regulation (GDPR) and our own internal
+                Privacy Policy.
+              </p>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      )
+    }
+  }
   return (
     <>
       <FormButton />
+      <Feedback />
     </>
   )
+
+  //   const props = useSpring({ transfrom: "translateX(0)" })
+
+  //   if (state.matches("error")) {
+  //     return (
+  //       <p>
+  //         error <button onClick={() => send("RESET")}>RESET</button>
+  //       </p>
+  //     )
+  //   }
+
+  //   if (state.matches("closing")) {
+  //     return <p>closing</p>
+  //   }
+
+  //   if (state.matches("open")) {
+  //     return (
+  //       <p>
+  //         Open <button onClick={() => send("CLOSE")}>CLOSE</button>{" "}
+  //       </p>
+  //     )
+  //   }
+
+  //   if (state.matches("closed")) {
+  //     return (
+  //       <p>
+  //         closed <button onClick={() => send("OPEN")}>OPEN</button>{" "}
+  //       </p>
+  //     )
+  //   }
 }
 
 export default FeedbackForm

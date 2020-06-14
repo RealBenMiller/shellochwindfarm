@@ -5,9 +5,6 @@ import { Button } from "react-bootstrap"
 import FeedbackForm from "../components/feedback"
 
 const Navigation = () => {
-  // function openNav() {
-  //   document.getElementById("feedbackform").css.right = "250px"
-  // }
   return (
     <>
       <div

@@ -2,81 +2,7 @@ import React, { Component } from "react"
 import { css } from "@emotion/core"
 import { Button } from "react-bootstrap"
 
-class Feedback extends React.Component {
-  userData
-
-  constructor(props) {
-    super(props)
-    this.OnChangeOne = this.OnChangeOne.bind(this)
-    this.OnChangeTwo = this.OnChangeTwo.bind(this)
-    this.OnChangeThree = this.OnChangeThree.bind(this)
-    this.onChangeName = this.onChangeName.bind(this)
-    this.onChangeAddress = this.onChangeAddress.bind(this)
-    this.onChangePostcode = this.onChangePostcode.bind(this)
-
-    this.state = {
-      OneA: "",
-      TwoA: "",
-      ThreeA: "",
-      name: "",
-      address: "",
-      phone: "",
-    }
-  }
-
-  //form Events
-
-  OnChangeOne(e) {
-    this.setState({ OneA: e.target.value })
-  }
-  OnChangeTwo(e) {
-    this.setState({ TwoA: e.target.value })
-  }
-
-  OnChangeThree(e) {
-    this.setState({ ThreeA: e.target.value })
-  }
-
-  onChangeName(e) {
-    this.setState({ name: e.target.value })
-  }
-
-  onChangeAddress(e) {
-    this.setState({ address: e.target.value })
-  }
-
-  onChangePostcode(e) {
-    this.setState({ postcode: e.target.value })
-  }
-
-  //React Life Cycle
-  componentDidMount() {
-    this.userData = JSON.parse(localStorage.getItem("user"))
-    if (localStorage.getItem("user")) {
-      this.setState({
-        OneA: this.userData.OneA,
-        TwoA: this.userData.TwoA,
-        ThreeA: this.userData.ThreeA,
-        name: this.userData.name,
-        address: this.userData.address,
-        postcode: this.userData.postcode,
-      })
-    } else {
-      this.setState({
-        OneA: "",
-        TwoA: "",
-        ThreeA: "",
-        name: "",
-        address: "",
-        postcode: "",
-      })
-    }
-  }
-
-  componentWillUpdate(nextProps, nextState) {
-    localStorage.setItem("user", JSON.stringify(nextState))
-  }
-
+class OldForm extends React.Component {
   render() {
     return (
       <div>
@@ -145,50 +71,10 @@ class Feedback extends React.Component {
             it to us by email or post using the contact details at the end of
             the form.
           </p>
-          <form
-            name="contact"
-            method="post"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            onSubmit={handleSubmit}
-          >
-            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out:{" "}
-                <input name="bot-field" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your name:
-                <br />
-                <input type="text" name="name" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Your email:
-                <br />
-                <input type="email" name="email" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <label>
-                Message:
-                <br />
-                <textarea name="message" onChange={handleChange} />
-              </label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
         </div>
       </div>
     )
   }
 }
 
-export default Feedback
+export default OldForm
