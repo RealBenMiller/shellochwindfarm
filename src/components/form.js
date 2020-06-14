@@ -485,7 +485,7 @@ class Feedback extends React.Component {
               complying in full with the General Data Protection Regulation
               (GDPR) and our own internal Privacy Policy.
             </p>
-            <Button type="submit">Submit</Button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
