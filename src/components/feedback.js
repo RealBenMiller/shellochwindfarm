@@ -823,13 +823,9 @@ const FeedbackForm = () => {
                 <p>
                   Your capital is at risk if you invest. Investments are not
                   covered by the Financial Services Compensation Scheme. For a
-                  full risk warning, please contact Steven Park and a
+                  further information, please contact Steven Park and a
                   representative from EDF Renewable Community Investment Ltd
-                  will contact you. EDF Renewables is a trading name of EDF
-                  Renewables Community Investment Limited which is an appointed
-                  representative of Resolution Compliance Limited which is
-                  authorised and regulated by the Financial Conduct Authority
-                  (FRN:574048)
+                  will contact you.
                 </p>
               </div>
 
