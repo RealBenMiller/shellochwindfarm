@@ -4,7 +4,7 @@ import { useMachine } from "@xstate/react"
 import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
 
-if (typeof document !== undefined) {
+if (typeof document === !undefined) {
   var initState = "closed"
   if (document.URL.indexOf("#click_approved") >= 0) {
     console.log("yes")
