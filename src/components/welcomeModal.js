@@ -13,10 +13,10 @@ const WelcomeModal = () => {
           z-index: 9999;
           margin-top: 10vh;
           font-size: 0.8em;
-          color: lightblue;
+          border: 4px solid lightblue;
           h1 {
             font-size: 22px;
-            border-bottom: 2px solid lightblue;
+            border-bottom: 4px solid lightblue;
             font-family: proxima-nova, sans-serif !important;
             font-weight: bold;
           }

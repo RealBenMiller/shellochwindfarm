@@ -1097,7 +1097,7 @@ const FeedbackForm = () => {
                 </label>
                 <label className="radio">
                   <input
-                    name="seven5"
+                    name="sevenN5"
                     type="checkbox"
                     value="wildlife"
                     checked={this.state.SevenN5A}

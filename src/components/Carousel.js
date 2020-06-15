@@ -28,8 +28,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -40,8 +39,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -52,8 +50,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -64,8 +61,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -76,8 +72,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -88,8 +83,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -100,8 +94,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -112,8 +105,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
@@ -125,8 +117,7 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            width: 70%;
-            margin-left: 15%;
+            width: 100%;
             min-height: 500px;
           `}
         ></iframe>
