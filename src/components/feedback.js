@@ -3,6 +3,7 @@ import { css } from "@emotion/core"
 import { useMachine } from "@xstate/react"
 import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
+import DownloadFile from "../images/feedbackform.pdf"
 
 var initState = "closed"
 
@@ -106,6 +107,21 @@ const FeedbackForm = () => {
       this.OnChangeOne = this.OnChangeOne.bind(this)
       this.OnChangeTwo = this.OnChangeTwo.bind(this)
       this.OnChangeThree = this.OnChangeThree.bind(this)
+      this.OnChangeFour = this.OnChangeFour.bind(this)
+      this.OnChangeFive = this.OnChangeFive.bind(this)
+      this.OnChangeSix = this.OnChangeSix.bind(this)
+      this.OnChangeSevenP1 = this.OnChangeSevenP1.bind(this)
+      this.OnChangeSevenP2 = this.OnChangeSevenP2.bind(this)
+      this.OnChangeSevenP3 = this.OnChangeSevenP3.bind(this)
+      this.OnChangeSevenP4 = this.OnChangeSevenP4.bind(this)
+      this.OnChangeSevenP5 = this.OnChangeSevenP5.bind(this)
+      this.OnChangeSevenP6 = this.OnChangeSevenP6.bind(this)
+      this.OnChangeSevenN1 = this.OnChangeSevenN1.bind(this)
+      this.OnChangeSevenN2 = this.OnChangeSevenN2.bind(this)
+      this.OnChangeSevenN3 = this.OnChangeSevenN3.bind(this)
+      this.OnChangeSevenN4 = this.OnChangeSevenN4.bind(this)
+      this.OnChangeSevenN5 = this.OnChangeSevenN5.bind(this)
+      this.OnChangeSevenN6 = this.OnChangeSevenN6.bind(this)
       this.onChangeName = this.onChangeName.bind(this)
       this.onChangeAddress = this.onChangeAddress.bind(this)
       this.onChangePostcode = this.onChangePostcode.bind(this)
@@ -114,6 +130,21 @@ const FeedbackForm = () => {
         OneA: "",
         TwoA: "",
         ThreeA: "",
+        FourA: "",
+        FiveA: "",
+        SixA: "",
+        SevenP1A: false,
+        SevenP2A: false,
+        SevenP3A: false,
+        SevenP4A: false,
+        SevenP5A: false,
+        SevenP6A: false,
+        SevenN1A: false,
+        SevenN2A: false,
+        SevenN3A: false,
+        SevenN4A: false,
+        SevenN5A: false,
+        SevenN6A: false,
         name: "",
         address: "",
         phone: "",
@@ -132,6 +163,90 @@ const FeedbackForm = () => {
 
     OnChangeThree(e) {
       this.setState({ ThreeA: e.target.value })
+    }
+
+    OnChangeFour(e) {
+      this.setState({ FourA: e.target.value })
+    }
+
+    OnChangeFive(e) {
+      this.setState({ FiveA: e.target.value })
+    }
+
+    OnChangeSix(e) {
+      this.setState({ SixA: e.target.value })
+    }
+
+    OnChangeSevenP1(e) {
+      this.setState(initialState => ({
+        SevenP1A: !initialState.SevenP1A,
+      }))
+    }
+
+    OnChangeSevenP2(e) {
+      this.setState(initialState => ({
+        SevenP2A: !initialState.SevenP2A,
+      }))
+    }
+
+    OnChangeSevenP3() {
+      this.setState(initialState => ({
+        SevenP3A: !initialState.SevenP3A,
+      }))
+    }
+
+    OnChangeSevenP4(e) {
+      this.setState(initialState => ({
+        SevenP4A: !initialState.SevenP4A,
+      }))
+    }
+
+    OnChangeSevenP5(e) {
+      this.setState(initialState => ({
+        SevenP5A: !initialState.SevenP5A,
+      }))
+    }
+
+    OnChangeSevenP6(e) {
+      this.setState(initialState => ({
+        SevenP6A: !initialState.SevenP6A,
+      }))
+    }
+
+    OnChangeSevenN1(e) {
+      this.setState(initialState => ({
+        SevenN1A: !initialState.SevenN1A,
+      }))
+    }
+
+    OnChangeSevenN2(e) {
+      this.setState(initialState => ({
+        SevenN2A: !initialState.SevenN2A,
+      }))
+    }
+
+    OnChangeSevenN3() {
+      this.setState(initialState => ({
+        SevenN3A: !initialState.SevenN3A,
+      }))
+    }
+
+    OnChangeSevenN4(e) {
+      this.setState(initialState => ({
+        SevenN4A: !initialState.SevenN4A,
+      }))
+    }
+
+    OnChangeSevenN5(e) {
+      this.setState(initialState => ({
+        SevenN5A: !initialState.SevenN5A,
+      }))
+    }
+
+    OnChangeSevenN6(e) {
+      this.setState(initialState => ({
+        SevenN6A: !initialState.SevenN6A,
+      }))
     }
 
     onChangeName(e) {
@@ -154,6 +269,21 @@ const FeedbackForm = () => {
           OneA: this.userData.OneA,
           TwoA: this.userData.TwoA,
           ThreeA: this.userData.ThreeA,
+          FourA: this.userData.FourA,
+          FiveA: this.userData.FiveA,
+          SixA: this.userData.SixA,
+          SevenP1A: this.userData.SevenP1A,
+          SevenP2A: this.userData.SevenP2A,
+          SevenP3A: this.userData.SevenP3A,
+          SevenP4A: this.userData.SevenP4A,
+          SevenP5A: this.userData.SevenP5A,
+          SevenP6A: this.userData.SevenP6A,
+          SevenN1A: this.userData.SevenN1A,
+          SevenN2A: this.userData.SevenN2A,
+          SevenN3A: this.userData.SevenN3A,
+          SevenN4A: this.userData.SevenN4A,
+          SevenN5A: this.userData.SevenN5A,
+          SevenN6A: this.userData.SevenN6A,
           name: this.userData.name,
           address: this.userData.address,
           postcode: this.userData.postcode,
@@ -163,6 +293,10 @@ const FeedbackForm = () => {
           OneA: "",
           TwoA: "",
           ThreeA: "",
+          FourA: "",
+          FiveA: "",
+          SixA: "",
+          SevenP3A: false,
           name: "",
           address: "",
           postcode: "",
@@ -197,7 +331,7 @@ const FeedbackForm = () => {
               padding-right: 20px;
               border-left: 2px solid lightblue;
               h1 {
-                font-size: 22px;
+                font-size: 24px;
                 border-bottom: 2px solid lightblue;
                 font-family: proxima-nova, sans-serif !important;
                 font-weight: bold;
@@ -217,26 +351,67 @@ const FeedbackForm = () => {
                 }
               `}
             </style>
-            <Button
-              onClick={() => {
-                send("CLOSE")
-              }}
+            <div
+              css={css`
+                text-align: center;
+                padding: 15px 0;
+              `}
             >
-              Close Form
-            </Button>
-            <Button>Print this Form</Button>
-            <h1>Have Your Say</h1>
-            <h2>Shelloch Wind Farm Proposal</h2>
-            <h2>Feedback Form</h2>
-            <p>
-              Thank you for taking the time to view our consultation materials
-              for the proposed Shelloch Wind Farm. We would encourage you to
-              provide your feedback on the proposals by completing this short
-              questionnaire. You can complete this electronically here or return
-              it to us by email or post using the contact details at the end of
-              the form.
-            </p>
-
+              <Button
+                css={css`
+                  margin-left: 20px;
+                  @media (max-width: 500px) {
+                    font-size: 10px;
+                  }
+                  @media (min-width: 501px) {
+                    font-size: 16px;
+                  }
+                  a {
+                    color: white;
+                    text-decoration: none;
+                  }
+                `}
+                onClick={() => {
+                  send("CLOSE")
+                }}
+              >
+                Close Form
+              </Button>
+              <Button
+                css={css`
+                  margin-left: 20px;
+                  @media (max-width: 500px) {
+                    font-size: 10px;
+                  }
+                  @media (min-width: 501px) {
+                    font-size: 16px;
+                  }
+                  a {
+                    color: white;
+                    text-decoration: none;
+                  }
+                `}
+              >
+                <a href={DownloadFile}>Download this Form</a>
+              </Button>
+            </div>
+            <div
+              css={css`
+                text-align: center;
+              `}
+            >
+              <h1>Have Your Say</h1>
+              <h2>Shelloch Wind Farm Proposal</h2>
+              <h2>Feedback Form</h2>
+              <p>
+                Thank you for taking the time to view our consultation materials
+                for the proposed Shelloch Wind Farm. We would encourage you to
+                provide your feedback on the proposals by completing this short
+                questionnaire. You can complete this electronically here or
+                return it to us by email or post using the contact details at
+                the end of the form.
+              </p>
+            </div>
             <form data-netlify="true" netlify name="feedbackform" method="POST">
               <input type="hidden" name="form-name" value="feedbackform" />
               <label
@@ -268,7 +443,13 @@ const FeedbackForm = () => {
                     checked={this.state.OneA === "yes"}
                     onChange={this.OnChangeOne}
                   />
-                  <span>Yes</span>
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
                 </label>
                 <label>
                   <input
@@ -278,7 +459,13 @@ const FeedbackForm = () => {
                     checked={this.state.OneA === "no"}
                     onChange={this.OnChangeOne}
                   />
-                  <span>No</span>
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
                 </label>
                 <label>
                   <input
@@ -288,7 +475,13 @@ const FeedbackForm = () => {
                     checked={this.state.OneA === "dk"}
                     onChange={this.OnChangeOne}
                   />
-                  <span>Don't Know</span>
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Don't Know
+                  </span>
                 </label>
               </div>
 
@@ -460,6 +653,490 @@ const FeedbackForm = () => {
                   </span>
                 </label>
               </div>
+              {/* Question Four */}
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                4. A Community Benefit Fund (as referenced on Exhibition Board
+                5) will be created to help fund projects in the local community.
+                Do you support the creation of this fund?
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="Four"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.FourA === "yes"}
+                    onChange={this.OnChangeFour}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="Four"
+                    type="radio"
+                    value="no"
+                    checked={this.state.FourA === "no"}
+                    onChange={this.OnChangeFour}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="Four"
+                    type="radio"
+                    value="dk"
+                    checked={this.state.FourA === "dk"}
+                    onChange={this.OnChangeFour}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Don't Know
+                  </span>
+                </label>
+                <label>
+                  If Yes, what would you like to see the fund used for?
+                </label>
+                <textarea
+                  css={css`
+                    display: block;
+                    width: 90%;
+                    border: solid 1px lightblue;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                  `}
+                  name="FourComments"
+                  rows="3"
+                  required
+                  value={this.state.address}
+                  onChange={this.onChangeAddress}
+                />
+              </div>
+
+              {/* Question Five */}
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                5. Force 9 Energy’s project partner, EDF Renewables, is also
+                committed to providing an opportunity for local community groups
+                to collectively have up to 10% Community Ownership in the
+                Shelloch Wind Farm through a Profit Sharing Agreement. If your
+                local group falls within the ‘’Community of interest’’ (as
+                referenced on Exhibition Board 6) Would you like to receive
+                further information on the Community Investment Opportunity?
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="Five"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.FiveA === "yes"}
+                    onChange={this.OnChangeFive}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="Five"
+                    type="radio"
+                    value="no"
+                    checked={this.state.FiveA === "no"}
+                    onChange={this.OnChangeFive}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
+                </label>
+                <p>
+                  Your capital is at risk if you invest. Investments are not
+                  covered by the Financial Services Compensation Scheme. For a
+                  full risk warning, please contact Steven Park and a
+                  representative from EDF Renewable Community Investment Ltd
+                  will contact you. EDF Renewables is a trading name of EDF
+                  Renewables Community Investment Limited which is an appointed
+                  representative of Resolution Compliance Limited which is
+                  authorised and regulated by the Financial Conduct Authority
+                  (FRN:574048)
+                </p>
+              </div>
+
+              {/* Question Six */}
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                6. A previous application for the site was approved for seven
+                turbines, but our proposals will reduce this to five more
+                productive turbines which will generate significantly more
+                renewable energy than the prior consented application. Do you
+                support this reduction?
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <label className="radio">
+                  <input
+                    name="six"
+                    type="radio"
+                    value="yes"
+                    checked={this.state.SixA === "yes"}
+                    onChange={this.OnChangeSix}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Yes
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="six"
+                    type="radio"
+                    value="no"
+                    checked={this.state.SixA === "no"}
+                    onChange={this.OnChangeSix}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    No
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="six"
+                    type="radio"
+                    value="Undecided"
+                    checked={this.state.SixA === "u"}
+                    onChange={this.OnChangeSix}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Undecided
+                  </span>
+                </label>
+              </div>
+
+              {/* Question Seven */}
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                7. Based upon what you have learned today, please tick the box
+                (es) below that reflect your views on the Shelloch Wind Farm
+                proposals:
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <p>
+                  Firstly, please tick the box(es) below that best reflect what
+                  you consider to be the positives associated with the
+                  development:{" "}
+                </p>
+                <label className="radio">
+                  <input
+                    name="sevenP1"
+                    type="checkbox"
+                    value="clean energy for future generations"
+                    checked={this.state.SevenP1A}
+                    onChange={this.OnChangeSevenP1}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Clean Energy for future generations
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenP2"
+                    type="checkbox"
+                    value="helping address the climate emergency"
+                    checked={this.state.SevenP2A}
+                    onChange={this.OnChangeSevenP2}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Helping address the Climate Emergency
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenP3"
+                    type="checkbox"
+                    value="potential community benefits"
+                    checked={this.state.SevenP3A}
+                    onChange={this.OnChangeSevenP3}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Potential Community Benefits
+                  </span>
+                </label>
+
+                <label className="radio">
+                  <input
+                    name="sevenP4"
+                    type="checkbox"
+                    value="locally produced energy"
+                    checked={this.state.SevenP4A}
+                    onChange={this.OnChangeSevenP4}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Locally produced Energy
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenP5"
+                    type="checkbox"
+                    value="support scottish government's energy strategy targets"
+                    checked={this.state.Seven5A}
+                    onChange={this.OnChangeSevenP5}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Support Scottish Government's Energy Strategy Targets
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenP6"
+                    type="checkbox"
+                    value="opportunity for local community groups to invest"
+                    checked={this.state.SevenP6A}
+                    onChange={this.OnChangeSevenP6}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Opportunity for local community groups to invest
+                  </span>
+                </label>
+
+                <p>
+                  Secondly, please tick the box(es) below that best reflect any
+                  concerns you have regarding the proposal:
+                </p>
+                <label className="radio">
+                  <input
+                    name="sevenN1"
+                    type="checkbox"
+                    value="impact on tourism"
+                    checked={this.state.SevenN1A}
+                    onChange={this.OnChangeSevenN1}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Impact on Tourism
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenN2"
+                    type="checkbox"
+                    value="access"
+                    checked={this.state.SevenN2A}
+                    onChange={this.OnChangeSevenN2}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Access Tracks
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenN3"
+                    type="checkbox"
+                    value="noise"
+                    checked={this.state.SevenN3A}
+                    onChange={this.OnChangeSevenN3}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Noise
+                  </span>
+                </label>
+
+                <label className="radio">
+                  <input
+                    name="sevenN4"
+                    type="checkbox"
+                    value="impact on roads"
+                    checked={this.state.SevenN4A}
+                    onChange={this.OnChangeSevenN4}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Impact on Local Roads
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="seven5"
+                    type="checkbox"
+                    value="wildlife"
+                    checked={this.state.SevenN5A}
+                    onChange={this.OnChangeSevenN5}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Impact on Wildlife
+                  </span>
+                </label>
+                <label className="radio">
+                  <input
+                    name="sevenN6"
+                    type="checkbox"
+                    value="visual impact"
+                    checked={this.state.SevenN6A}
+                    onChange={this.OnChangeSevenN6}
+                  />
+                  <span
+                    css={css`
+                      padding-left: 10px;
+                    `}
+                  >
+                    Visual Impact
+                  </span>
+                </label>
+              </div>
+
+              {/* Question Eight*/}
+              <label
+                css={css`
+                  font-weight: bold;
+                `}
+              >
+                8. Do you have any other comments that you wish to raise in
+                connection with question 7 or anything else concerning the
+                Shelloch proposals?
+              </label>
+              <div
+                css={css`
+                  label {
+                    display: inline-block;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                  }
+                `}
+              >
+                <textarea
+                  css={css`
+                    display: block;
+                    width: 90%;
+                    border: solid 1px lightblue;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                  `}
+                  name="FourComments"
+                  rows="3"
+                  required
+                  value={this.state.address}
+                  onChange={this.onChangeAddress}
+                />
+              </div>
               <h2
                 css={css`
                 border-bottom: 2px solid lightblue;
@@ -473,15 +1150,31 @@ const FeedbackForm = () => {
               </h2>
               <label>Name</label>
               <input
+                css={css`
+                  display: block;
+                  width: 90%;
+                  border: solid 1px lightblue;
+                  border-radius: 5px;
+                  margin-bottom: 10px;
+                `}
                 name="name"
                 type="name"
+                placeholder="Enter Name"
                 value={this.state.name}
                 onChange={this.onChangeName}
                 required
               />
               <label>Address</label>
               <textarea
+                css={css`
+                  display: block;
+                  width: 90%;
+                  border: solid 1px lightblue;
+                  border-radius: 5px;
+                  margin-bottom: 10px;
+                `}
                 name="address"
+                placeholder="Enter Address"
                 as="textarea"
                 rows="3"
                 required
@@ -490,14 +1183,29 @@ const FeedbackForm = () => {
               />
               <label>Post Code</label>
               <input
+                css={css`
+                  display: block;
+                  width: 90%;
+                  border: solid 1px lightblue;
+                  border-radius: 5px;
+                  margin-bottom: 10px;
+                `}
                 name="postcode"
                 type="postcode"
+                placeholder="Enter Post Code"
                 required
                 value={this.state.postcode}
                 onChange={this.onChangePostcode}
               />
               <label>Email Address</label>
               <input
+                css={css`
+                  display: block;
+                  width: 90%;
+                  border: solid 1px lightblue;
+                  border-radius: 5px;
+                  margin-bottom: 10px;
+                `}
                 name="email"
                 type="email"
                 placeholder="Enter email"
@@ -509,6 +1217,7 @@ const FeedbackForm = () => {
                   font-size: 20px;
                   font-family: proxima-nova, sans-serif !important;
                   font-weight: bold;
+                  margin-top: 20px;
                 `}
               >
                 Force 9 Energy Contact Details
@@ -555,7 +1264,13 @@ const FeedbackForm = () => {
                 General Data Protection Regulation (GDPR) and our own internal
                 Privacy Policy.
               </p>
-              <button type="submit">Submit</button>
+              <div
+                css={css`
+                  text-align: center;
+                `}
+              >
+                <Button type="submit">Submit</Button>
+              </div>
             </form>
           </div>
         </div>
