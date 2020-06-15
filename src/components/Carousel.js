@@ -39,8 +39,8 @@ const StoryMapCarousel = props => {
           frameborder="0"
           css={css`
             position: relative;
-            margin-left: 10%;
-            width: 80%;
+            margin-left: 7.5%;
+            width: 85%;
             min-height: 500px;
           `}
         ></iframe>
