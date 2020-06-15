@@ -12,7 +12,7 @@ const WelcomeModal = () => {
         css={css`
           z-index: 9999;
           margin-top: 10vh;
-          font-size: 0.8em;
+          font-size: 1.2em;
           border: 4px solid lightblue;
           h1 {
             font-size: 22px;
@@ -31,12 +31,18 @@ const WelcomeModal = () => {
             Thank you for taking the time to visit our Virtual Consultation Room
             and view the proposals for Shelloch. We have developed an
             interactive Story Map which is set out over 9 Boards. Whilst we have
-            numbered them in order please feel free to read them in whatever
+            numbered them in order, please feel free to read them in whatever
             order you prefer. You can also easily click between boards using the
-            arrows at the side of each board. We would also welcome your
-            comments and feedback and would appreciate if you could take the
-            time to complete a Feedback Form. To work your way through the
-            exhibition, scroll to the right to see more boards.
+            arrows at the side of each board.
+          </p>
+          <p>
+            {" "}
+            We would also welcome your comments and feedback and would
+            appreciate if you could take the time to complete a Feedback Form.
+          </p>
+          <p>
+            To work your way through the exhibition, scroll to the right to see
+            more boards.
           </p>
         </Modal.Body>
       </Modal>
