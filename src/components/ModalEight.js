@@ -19,7 +19,7 @@ const ModalEight = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 75%;
+            left: 88%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

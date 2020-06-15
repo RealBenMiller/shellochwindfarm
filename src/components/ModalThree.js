@@ -19,7 +19,7 @@ const ModalThree = () => {
           css={css`
             position: absolute;
             top: 81%;
-            left: 35.3%;
+            left: 41%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

@@ -18,7 +18,7 @@ const ModalSix = () => {
           css={css`
             position: absolute;
             top: 81%;
-            left: 59%;
+            left: 69%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

@@ -15,7 +15,7 @@ const ModalNine = () => {
           css={css`
             position: absolute;
             top: 81%;
-            left: 77.5%;
+            left: 90%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

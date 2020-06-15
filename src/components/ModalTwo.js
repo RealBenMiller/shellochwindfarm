@@ -15,7 +15,7 @@ const ModalTwo = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 33.5%;
+            left: 39%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

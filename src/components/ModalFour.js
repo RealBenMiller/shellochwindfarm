@@ -18,7 +18,7 @@ const ModalFour = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 43.6%;
+            left: 51%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

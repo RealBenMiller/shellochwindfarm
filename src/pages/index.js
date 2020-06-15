@@ -15,7 +15,6 @@ import ModalSix from "../components/ModalSix"
 import ModalSeven from "../components/ModalSeven"
 import ModalEight from "../components/ModalEight"
 import ModalNine from "../components/ModalNine"
-import FeedbackButton from "../components/FeedbackButton"
 
 const Image = styled.img`
   max-width: none;
@@ -56,7 +55,6 @@ const IndexPage = () => (
         <ModalSeven />
         <ModalEight />
         <ModalNine />
-        <FeedbackButton />
       </div>
     </ScrollContainer>
   </Layout>

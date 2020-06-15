@@ -19,7 +19,7 @@ const ModalSeven = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 65.35%;
+            left: 76.5%;
             height: 45px;
             width: 45px;
             border-radius: 50%;

@@ -15,7 +15,7 @@ const ModalOne = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 23.6%;
+            left: 27.2%;
             height: 45px;
             width: 45px;
             border-radius: 50%;
