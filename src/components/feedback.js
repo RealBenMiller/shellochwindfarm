@@ -108,6 +108,7 @@ const FeedbackForm = () => {
       this.OnChangeTwo = this.OnChangeTwo.bind(this)
       this.OnChangeThree = this.OnChangeThree.bind(this)
       this.OnChangeFour = this.OnChangeFour.bind(this)
+      this.OnChangeFourComments = this.OnChangeFourComments.bind(this)
       this.OnChangeFive = this.OnChangeFive.bind(this)
       this.OnChangeSix = this.OnChangeSix.bind(this)
       this.OnChangeSevenP1 = this.OnChangeSevenP1.bind(this)
@@ -121,7 +122,8 @@ const FeedbackForm = () => {
       this.OnChangeSevenN3 = this.OnChangeSevenN3.bind(this)
       this.OnChangeSevenN4 = this.OnChangeSevenN4.bind(this)
       this.OnChangeSevenN5 = this.OnChangeSevenN5.bind(this)
-      this.OnChangeSevenN6 = this.OnChangeSevenN6.bind(this)
+      this.OnChangeSevenN6 = this.OnChangeSevenN6.bind(this)      
+      this.onChangeEight = this.onChangeEight.bind(this)
       this.onChangeName = this.onChangeName.bind(this)
       this.onChangeAddress = this.onChangeAddress.bind(this)
       this.onChangePostcode = this.onChangePostcode.bind(this)
@@ -131,6 +133,7 @@ const FeedbackForm = () => {
         TwoA: "",
         ThreeA: "",
         FourA: "",
+        FourComments: "",
         FiveA: "",
         SixA: "",
         SevenP1A: false,
@@ -167,6 +170,10 @@ const FeedbackForm = () => {
 
     OnChangeFour(e) {
       this.setState({ FourA: e.target.value })
+    }
+
+    OnChangeFourComments(e) {
+      this.setState({ FourComments: e.target.value })
     }
 
     OnChangeFive(e) {
@@ -248,6 +255,10 @@ const FeedbackForm = () => {
         SevenN6A: !initialState.SevenN6A,
       }))
     }
+    
+    onChangeEight(e) {
+      this.setState({ Eight: e.target.value })
+    }
 
     onChangeName(e) {
       this.setState({ name: e.target.value })
@@ -270,6 +281,7 @@ const FeedbackForm = () => {
           TwoA: this.userData.TwoA,
           ThreeA: this.userData.ThreeA,
           FourA: this.userData.FourA,
+          FourComments: this.userData.FourComments
           FiveA: this.userData.FiveA,
           SixA: this.userData.SixA,
           SevenP1A: this.userData.SevenP1A,
@@ -284,6 +296,7 @@ const FeedbackForm = () => {
           SevenN4A: this.userData.SevenN4A,
           SevenN5A: this.userData.SevenN5A,
           SevenN6A: this.userData.SevenN6A,
+          Eight: this.userData.Eight,
           name: this.userData.name,
           address: this.userData.address,
           postcode: this.userData.postcode,
@@ -294,9 +307,22 @@ const FeedbackForm = () => {
           TwoA: "",
           ThreeA: "",
           FourA: "",
+          FourComments: "",
           FiveA: "",
           SixA: "",
+          SevenP1A: false,
+          SevenP2A: false,
           SevenP3A: false,
+          SevenP4A: false,
+          SevenP5A: false,
+          SevenP6A: false,
+          SevenN1A: false,
+          SevenN2A: false,
+          SevenN3A: false,
+          SevenN4A: false,
+          SevenN5A: false,
+          SevenN6A: false,
+          Eight: "",
           name: "",
           address: "",
           postcode: "",
@@ -734,8 +760,8 @@ const FeedbackForm = () => {
                   name="FourComments"
                   rows="3"
                   required
-                  value={this.state.address}
-                  onChange={this.onChangeAddress}
+                  value={this.state.FourComments}
+                  onChange={this.OnChangeFourComments}
                 />
               </div>
 
@@ -1130,11 +1156,11 @@ const FeedbackForm = () => {
                     border-radius: 5px;
                     margin-bottom: 10px;
                   `}
-                  name="FourComments"
+                  name="eight"
                   rows="3"
                   required
-                  value={this.state.address}
-                  onChange={this.onChangeAddress}
+                  value={this.state.Eight}
+                  onChange={this.onChangeEight}
                 />
               </div>
               <h2
