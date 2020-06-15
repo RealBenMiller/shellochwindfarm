@@ -122,7 +122,7 @@ const FeedbackForm = () => {
       this.OnChangeSevenN3 = this.OnChangeSevenN3.bind(this)
       this.OnChangeSevenN4 = this.OnChangeSevenN4.bind(this)
       this.OnChangeSevenN5 = this.OnChangeSevenN5.bind(this)
-      this.OnChangeSevenN6 = this.OnChangeSevenN6.bind(this)      
+      this.OnChangeSevenN6 = this.OnChangeSevenN6.bind(this)
       this.onChangeEight = this.onChangeEight.bind(this)
       this.onChangeName = this.onChangeName.bind(this)
       this.onChangeAddress = this.onChangeAddress.bind(this)
@@ -255,7 +255,7 @@ const FeedbackForm = () => {
         SevenN6A: !initialState.SevenN6A,
       }))
     }
-    
+
     onChangeEight(e) {
       this.setState({ Eight: e.target.value })
     }
@@ -281,7 +281,7 @@ const FeedbackForm = () => {
           TwoA: this.userData.TwoA,
           ThreeA: this.userData.ThreeA,
           FourA: this.userData.FourA,
-          FourComments: this.userData.FourComments
+          FourComments: this.userData.FourComments,
           FiveA: this.userData.FiveA,
           SixA: this.userData.SixA,
           SevenP1A: this.userData.SevenP1A,
