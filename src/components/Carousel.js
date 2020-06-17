@@ -140,6 +140,9 @@ const StoryMapCarousel = props => {
                 document.getElementById("open").click()
               }
             }}
+            css={css`
+              background-color: #007fc1;
+            `}
           >
             Open Feedback Form
           </Button>
