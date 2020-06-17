@@ -11,9 +11,17 @@ const StoryMapCarousel = props => {
   return (
     <Carousel
       css={css`
+        .carousel-indicators {
+          display: none;
+        }
+        padding-top: 40px;
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
           filter: invert(100%);
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          bottom: 100%;
         }
       `}
       pause={"hover"}
@@ -113,6 +121,29 @@ const StoryMapCarousel = props => {
       </Carousel.Item>
 
       <Carousel.Item>
+        <div
+          css={css`
+            width: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+          `}
+        >
+          <Button
+            id="modalformreveal"
+            onClick={() => {
+              var elem = document.getElementById("modalformreveal")
+              if (document.getElementById("open") === null) {
+                elem.innerHTML = "Open Feedback Form"
+                document.getElementById("close").click()
+              } else {
+                elem.innerHTML = "Close Feedback Form"
+                document.getElementById("open").click()
+              }
+            }}
+          >
+            Open Feedback Form
+          </Button>
+        </div>
         <iframe
           src="https://storymaps.arcgis.com/stories/cc5da35cab6c457f8c59ffd1d58bb7c1"
           frameborder="0"

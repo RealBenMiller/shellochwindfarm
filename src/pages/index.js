@@ -15,6 +15,7 @@ import ModalSix from "../components/ModalSix"
 import ModalSeven from "../components/ModalSeven"
 import ModalEight from "../components/ModalEight"
 import ModalNine from "../components/ModalNine"
+import StartScrolling from "../components/StartScrolling"
 
 const Image = styled.img`
   max-width: none;
@@ -46,6 +47,7 @@ const IndexPage = () => (
         `}
       >
         <Image src={Exhibition} alt="" />
+        <StartScrolling />
         <ModalOne />
         <ModalTwo />
         <ModalThree />

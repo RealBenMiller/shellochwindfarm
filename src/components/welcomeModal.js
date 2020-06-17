@@ -12,8 +12,11 @@ const WelcomeModal = () => {
         css={css`
           z-index: 9999;
           margin-top: 10vh;
-          font-size: 1.2em;
-          border: 4px solid lightblue;
+          @media (max-width: 600px) {
+            margin-left: 10%;
+            font-size: 1em;
+            max-width: 80%;
+          }
           h1 {
             font-size: 22px;
             border-bottom: 4px solid lightblue;
@@ -23,10 +26,17 @@ const WelcomeModal = () => {
         `}
         show={show}
         onHide={handleClose}
-        size="lg"
       >
-        <Modal.Body closeButton>
+        <Modal.Header
+          css={css`
+            border: none;
+            padding-bottom: none;
+          `}
+          closeButton
+        >
           <h1>Welcome to the Exhibition</h1>
+        </Modal.Header>
+        <Modal.Body>
           <p>
             Thank you for taking the time to visit our Virtual Consultation Room
             and view the proposals for Shelloch. We have developed an

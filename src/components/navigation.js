@@ -29,6 +29,7 @@ const Navigation = () => {
         <Button
           css={css`
             margin-left: 20px;
+            background-color: #007fc1;
             @media (max-width: 500px) {
               font-size: 10px;
             }

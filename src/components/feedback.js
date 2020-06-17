@@ -73,6 +73,7 @@ const FeedbackForm = () => {
         <Button
           css={css`
             margin-left: 20px;
+            background-color: #007fc1;
             @media (max-width: 500px) {
               font-size: 10px;
             }
@@ -355,10 +356,10 @@ const FeedbackForm = () => {
               overflow-y: scroll;
               padding-left: 20px;
               padding-right: 20px;
-              border-left: 2px solid lightblue;
+              border-left: 2px solid #007fc1;
               h1 {
                 font-size: 24px;
-                border-bottom: 2px solid lightblue;
+                border-bottom: 2px solid #007fc1;
                 font-family: proxima-nova, sans-serif !important;
                 font-weight: bold;
               }
@@ -380,11 +381,17 @@ const FeedbackForm = () => {
             <div
               css={css`
                 text-align: center;
-                padding: 15px 0;
+                padding: 15px;
+                position: sticky;
+                top: 0;
+                background-color: white;
+                border-bottom: 2px solid #007fc1;
               `}
             >
               <Button
+                id="close"
                 css={css`
+                  background-color: #007fc1;
                   margin-left: 20px;
                   @media (max-width: 500px) {
                     font-size: 10px;
@@ -405,6 +412,7 @@ const FeedbackForm = () => {
               </Button>
               <Button
                 css={css`
+                  background-color: #007fc1;
                   margin-left: 20px;
                   @media (max-width: 500px) {
                     font-size: 10px;
@@ -424,6 +432,7 @@ const FeedbackForm = () => {
             <div
               css={css`
                 text-align: center;
+                padding-top: 15px;
               `}
             >
               <h1>Have Your Say</h1>
@@ -753,7 +762,7 @@ const FeedbackForm = () => {
                   css={css`
                     display: block;
                     width: 90%;
-                    border: solid 1px lightblue;
+                    border: solid 1px #007fc1;
                     border-radius: 5px;
                     margin-bottom: 10px;
                   `}
@@ -1148,7 +1157,7 @@ const FeedbackForm = () => {
                   css={css`
                     display: block;
                     width: 90%;
-                    border: solid 1px lightblue;
+                    border: solid 1px #007fc1;
                     border-radius: 5px;
                     margin-bottom: 10px;
                   `}
@@ -1161,7 +1170,7 @@ const FeedbackForm = () => {
               </div>
               <h2
                 css={css`
-                border-bottom: 2px solid lightblue;
+                border-bottom: 2px solid #007fc1;
                 font-size: 20px;
                 font-family: proxima-nova, sans-serif !important;
                 font-weight: bold;
@@ -1175,7 +1184,7 @@ const FeedbackForm = () => {
                 css={css`
                   display: block;
                   width: 90%;
-                  border: solid 1px lightblue;
+                  border: solid 1px #007fc1;
                   border-radius: 5px;
                   margin-bottom: 10px;
                 `}
@@ -1191,7 +1200,7 @@ const FeedbackForm = () => {
                 css={css`
                   display: block;
                   width: 90%;
-                  border: solid 1px lightblue;
+                  border: solid 1px #007fc1;
                   border-radius: 5px;
                   margin-bottom: 10px;
                 `}
@@ -1208,7 +1217,7 @@ const FeedbackForm = () => {
                 css={css`
                   display: block;
                   width: 90%;
-                  border: solid 1px lightblue;
+                  border: solid 1px #007fc1;
                   border-radius: 5px;
                   margin-bottom: 10px;
                 `}
@@ -1224,7 +1233,7 @@ const FeedbackForm = () => {
                 css={css`
                   display: block;
                   width: 90%;
-                  border: solid 1px lightblue;
+                  border: solid 1px #007fc1;
                   border-radius: 5px;
                   margin-bottom: 10px;
                 `}
@@ -1235,7 +1244,7 @@ const FeedbackForm = () => {
               />
               <h2
                 css={css`
-                  border-bottom: 2px solid lightblue;
+                  border-bottom: 2px solid #007fc1;
                   font-size: 20px;
                   font-family: proxima-nova, sans-serif !important;
                   font-weight: bold;
@@ -1267,7 +1276,7 @@ const FeedbackForm = () => {
 
               <h4
                 css={css`
-                  border-bottom: 2px solid lightblue;
+                  border-bottom: 2px solid #007fc1;
                   font-size: 20px;
                 `}
               >
@@ -1291,7 +1300,14 @@ const FeedbackForm = () => {
                   text-align: center;
                 `}
               >
-                <Button type="submit">Submit</Button>
+                <Button
+                  css={css`
+                    background-color: #007fc1;
+                  `}
+                  type="submit"
+                >
+                  Submit
+                </Button>
               </div>
             </form>
           </div>
