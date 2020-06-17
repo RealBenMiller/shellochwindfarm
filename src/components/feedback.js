@@ -1257,7 +1257,11 @@ const FeedbackForm = () => {
                 For more information or to return your feedback form, you can
                 contact us in the following ways:
               </p>
-              <p>Submit this form</p>
+              <p>
+                Submit this form by filling it and pressing the submit button
+                below. Alternatively you can download the form and email it or
+                post it using the details below.
+              </p>
               <p>
                 Email:{" "}
                 <a href="mailto:steven@libertonecomms.co.uk">
