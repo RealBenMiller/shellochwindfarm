@@ -38,7 +38,7 @@ const StartScrolling = () => {
       see the boards. Click on the titles of each board to view the content.
       <br></br>
       <br></br>
-      Scroll to the right to start <br></br>
+      Drag the screen to the right to view more. <br></br>
       <br></br>
       <span
         css={css`
