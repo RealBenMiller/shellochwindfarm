@@ -12,6 +12,7 @@ const StartScrolling = () => {
         max-width: 150px;
         border-radius: 5%;
         padding: 5px;
+        padding-botton: 10px;
         background-color: white;
         color: #007fc1;
         font-size: 12px;

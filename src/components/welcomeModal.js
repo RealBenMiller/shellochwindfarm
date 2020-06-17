@@ -14,7 +14,7 @@ const WelcomeModal = () => {
           margin-top: 10vh;
           @media (max-width: 600px) {
             margin-left: 10%;
-            font-size: 1em;
+            font-size: 12px;
             max-width: 80%;
           }
           h1 {
