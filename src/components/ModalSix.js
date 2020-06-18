@@ -26,14 +26,11 @@ const ModalSix = () => {
               background-color: #007fc1;
             }
 
-            @media (min-width: 450px) {
-              height: 45px;
-              font-size: 14px;
-              line-height: 22px;
+            @media (min-width: 400px) and (max-width: 814px) {
               left: 65%;
             }
 
-            @media (min-width: 815px) {
+            @media (min-width: 815px) and (max-width: 1749px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;

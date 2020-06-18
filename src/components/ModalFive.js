@@ -26,12 +26,11 @@ const ModalFive = () => {
               background-color: #007fc1;
             }
 
-            @media (min-width: 400px) {
-              height: 45px;
+            @media (min-width: 400px) and (max-width: 814px) {
               left: 61%;
             }
 
-            @media (min-width: 815px) {
+            @media (min-width: 815px) and (max-width: 1749px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;

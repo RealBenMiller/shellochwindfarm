@@ -25,19 +25,16 @@ const ModalOne = () => {
             &:hover {
               background-color: #007fc1;
             }
-            @media (min-width: 815px) {
+
+            @media (max-width: 400px) and (max-width: 814px) {
+              left: 27%;
+            }
+            @media (min-width: 815px) and (max-width: 1749px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
               left: 26%;
             }
-
-            // @media (max-width: 400px) {
-            //   height: 45px;
-            //   font-size: 14px;
-            //   line-height: 22px;
-            //   left: 27%;
-            // }
 
             @media (min-width: 1750px) {
               left: 27.5%;
