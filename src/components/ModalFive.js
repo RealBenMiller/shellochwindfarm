@@ -28,8 +28,6 @@ const ModalFive = () => {
 
             @media (min-width: 400px) {
               height: 45px;
-              font-size: 14px;
-              line-height: 22px;
               left: 61%;
             }
 
