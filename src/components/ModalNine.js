@@ -39,6 +39,9 @@ const ModalNine = () => {
             }
 
             @media (min-width: 1750px) {
+              height: 45px;
+              font-size: 14px;
+              line-height: 22px;
               left: 90.2%;
             }
           `}
