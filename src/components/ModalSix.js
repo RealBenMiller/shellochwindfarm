@@ -15,7 +15,7 @@ const ModalSix = () => {
           css={css`
             position: absolute;
             top: 81%;
-            left: 6%;
+            left: 66%;
             border-radius: 10px;
             border: 2px solid #007fc1;
             background-color: white;
@@ -34,7 +34,7 @@ const ModalSix = () => {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
-              left: 66%;
+              left: 65.5%;
             }
 
             @media (min-width: 1750px) {
