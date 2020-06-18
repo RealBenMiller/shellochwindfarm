@@ -15,7 +15,7 @@ const ModalFour = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 46.8%;
+            left: 46%;
             border-radius: 10px;
             border: 2px solid #007fc1;
             background-color: white;
@@ -27,14 +27,14 @@ const ModalFour = () => {
             }
 
             @media (max-width: 400px) and (max-width: 814px) {
-              left: 49.8%;
+              left: 48%;
             }
 
             @media (min-width: 815px) and (max-width: 1100px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
-              left: 48%;
+              left: 48.5%;
             }
 
             @media (min-width: 1100px) and (max-width: 1749px) {
