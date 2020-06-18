@@ -768,7 +768,6 @@ const FeedbackForm = () => {
                   `}
                   name="FourComments"
                   rows="3"
-                  required
                   value={this.state.FourComments}
                   onChange={this.OnChangeFourComments}
                 />
@@ -1163,7 +1162,6 @@ const FeedbackForm = () => {
                   `}
                   name="eight"
                   rows="3"
-                  required
                   value={this.state.Eight}
                   onChange={this.onChangeEight}
                 />
