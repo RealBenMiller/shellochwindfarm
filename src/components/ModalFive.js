@@ -15,7 +15,7 @@ const ModalFive = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 61.75%;
+            left: 61%;
             border-radius: 10px;
             border: 2px solid #007fc1;
             background-color: white;
@@ -41,7 +41,7 @@ const ModalFive = () => {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
-              left: 62%;
+              left: 61%;
             }
           `}
           onClick={handleShow}

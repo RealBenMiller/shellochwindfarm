@@ -41,7 +41,7 @@ const ModalSix = () => {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
-              left: 67.3%;
+              left: 66.5%;
             }
           `}
           onClick={handleShow}

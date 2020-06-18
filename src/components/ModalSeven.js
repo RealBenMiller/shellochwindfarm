@@ -31,7 +31,14 @@ const ModalSeven = () => {
               left: 75%;
             }
 
-            @media (min-width: 815px) and (max-width: 1749px) {
+            @media (min-width: 815px) and (max-width: 1100px) {
+              height: 45px;
+              font-size: 14px;
+              line-height: 22px;
+              left: 74%;
+            }
+
+            @media (min-width: 1101px) and (max-width: 1749px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
