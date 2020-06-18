@@ -16,7 +16,7 @@ const ModalSeven = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 72%;
+            left: 73%;
             border-radius: 10px;
             border: 2px solid #007fc1;
             background-color: white;
@@ -28,10 +28,10 @@ const ModalSeven = () => {
             }
 
             @media (min-width: 400px) and (max-width: 814px) {
-              left: 74.4%;
+              left: 75%;
             }
 
-            @media (min-width: 815px) and (max-width: 749px) {
+            @media (min-width: 815px) and (max-width: 1749px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
@@ -39,6 +39,9 @@ const ModalSeven = () => {
             }
 
             @media (min-width: 1750px) {
+              height: 45px;
+              font-size: 14px;
+              line-height: 22px;
               left: 75.2%;
             }
           `}

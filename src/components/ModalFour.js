@@ -27,7 +27,7 @@ const ModalFour = () => {
             }
 
             @media (max-width: 400px) and (max-width: 814px) {
-              left: 49%;
+              left: 49.8%;
             }
 
             @media (min-width: 815px) and (max-width: 1749px) {
