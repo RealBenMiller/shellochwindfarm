@@ -26,19 +26,20 @@ const ModalSeven = () => {
             &:hover {
               background-color: #007fc1;
             }
+
+            @media (min-width: 450px) {
+              height: 45px;
+              font-size: 14px;
+              line-height: 22px;
+              left: 74.4%;
+            }
+
             @media (min-width: 815px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
               left: 72.8%;
             }
-
-            // @media (max-width: 400px) {
-            //   height: 45px;
-            //   font-size: 14px;
-            //   line-height: 22px;
-            //   left: 74.4%;
-            // }
 
             @media (min-width: 1750px) {
               left: 75.2%;

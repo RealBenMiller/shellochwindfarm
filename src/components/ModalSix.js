@@ -25,19 +25,20 @@ const ModalSix = () => {
             &:hover {
               background-color: #007fc1;
             }
+
+            @media (min-width: 450px) {
+              height: 45px;
+              font-size: 14px;
+              line-height: 22px;
+              left: 65%;
+            }
+
             @media (min-width: 815px) {
               height: 45px;
               font-size: 14px;
               line-height: 22px;
               left: 64.5%;
             }
-
-            // @media (max-width: 400px) {
-            //   height: 45px;
-            //   font-size: 14px;
-            //   line-height: 22px;
-            //   left: 66.3%;
-            // }
 
             @media (min-width: 1750px) {
               left: 67.3%;
