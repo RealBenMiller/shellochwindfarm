@@ -16,7 +16,7 @@ const ModalEight = () => {
           css={css`
             position: absolute;
             top: 22%;
-            left: 84.6%;
+            left: 86.3%;
             border-radius: 10px;
             border: 2px solid #007fc1;
             background-color: white;
@@ -26,6 +26,14 @@ const ModalEight = () => {
             &:hover {
               background-color: #007fc1;
             }
+
+            // @media (min-width: 400px) {
+            //   height: 45px;
+            //   font-size: 14px;
+            //   line-height: 22px;
+            //   left: 86.3%;
+            // }
+
             @media (min-width: 815px) {
               height: 45px;
               font-size: 14px;
@@ -33,14 +41,7 @@ const ModalEight = () => {
               left: 84.6%;
             }
 
-            @media (max-width: 400px) {
-              height: 45px;
-              font-size: 14px;
-              line-height: 22px;
-              left: 86.3%;
-            }
-
-            @media (min-width: 1500px) {
+            @media (min-width: 1750px) {
               left: 87%;
             }
           `}

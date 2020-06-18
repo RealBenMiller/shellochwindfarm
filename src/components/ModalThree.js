@@ -33,13 +33,13 @@ const ModalThree = () => {
               left: 38%;
             }
 
-            @media (max-width: 400px) {
-              height: 45px;
-              font-size: 14px;
-              line-height: 22px;
-              left: 39.5%;
-            }
-            @media (min-width: 1500px) {
+            // @media (max-width: 400px) {
+            //   height: 45px;
+            //   font-size: 14px;
+            //   line-height: 22px;
+            //   left: 39.5%;
+            // }
+            @media (min-width: 1750px) {
               left: 40.5%;
             }
           `}

@@ -32,13 +32,13 @@ const ModalFour = () => {
               left: 47.5%;
             }
 
-            @media (max-width: 400px) {
-              height: 45px;
-              font-size: 14px;
-              line-height: 22px;
-              left: 49%;
-            }
-            @media (min-width: 1500px) {
+            // @media (max-width: 400px) {
+            //   height: 45px;
+            //   font-size: 14px;
+            //   line-height: 22px;
+            //   left: 49%;
+            // }
+            @media (min-width: 1750px) {
               left: 49.8%;
             }
           `}

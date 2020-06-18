@@ -40,19 +40,14 @@ const WelcomeModal = () => {
           <p>
             Thank you for taking the time to visit our Virtual Consultation Room
             and view the proposals for Shelloch. We have developed an
-            interactive Story Map which is set out over 9 Boards. Whilst we have
-            numbered them in order, please feel free to read them in whatever
-            order you prefer. You can also easily click between boards using the
-            arrows at the side of each board.
+            interactive Story Map which is set out over 9 Boards.
           </p>
           <p>
-            {" "}
-            We would also welcome your comments and feedback and would
-            appreciate if you could take the time to complete a Feedback Form.
-          </p>
-          <p>
-            To work your way through the exhibition, scroll to the right to see
-            more boards.
+            We would welcome your comments and feedback and would appreciate if
+            you could take the time to complete a Feedback Form. To work your
+            way through the exhibition, scroll to the right to see more boards.
+            You can also easily click between boards using the arrows at the top
+            of each board.
           </p>
         </Modal.Body>
       </Modal>

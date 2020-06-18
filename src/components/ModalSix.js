@@ -32,14 +32,14 @@ const ModalSix = () => {
               left: 64.5%;
             }
 
-            @media (max-width: 400px) {
-              height: 45px;
-              font-size: 14px;
-              line-height: 22px;
-              left: 66.3%;
-            }
+            // @media (max-width: 400px) {
+            //   height: 45px;
+            //   font-size: 14px;
+            //   line-height: 22px;
+            //   left: 66.3%;
+            // }
 
-            @media (min-width: 1500px) {
+            @media (min-width: 1750px) {
               left: 67.3%;
             }
           `}
