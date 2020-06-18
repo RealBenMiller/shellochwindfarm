@@ -18,10 +18,25 @@ const StoryMapCarousel = props => {
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
           filter: invert(100%);
+          &before:: {
+            content: "Next";
+          }
         }
         .carousel-control-prev,
         .carousel-control-next {
           bottom: 100%;
+          .sr-only {
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            padding-top: 15px;
+            margin: 0 auto;
+            overflow: visible;
+            white-space: nowrap;
+            border: 0;
+            color: black;
+            clip: auto;
+          }
         }
       `}
       pause={"hover"}
