@@ -21,9 +21,9 @@ module.exports = {
       options: {
         trackingID: "UA-127639939-2",
         pageTransitionDelay: 0,
-        defer: false
-      }
-    }
+        defer: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
