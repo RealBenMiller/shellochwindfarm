@@ -17,6 +17,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingID: "UA-127639939-2",
+        pageTransitionDelay: 0,
+        defer: false
+      }
+    }
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
