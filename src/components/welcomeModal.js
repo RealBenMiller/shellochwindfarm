@@ -46,8 +46,8 @@ const WelcomeModal = () => {
             We would welcome your comments and feedback and would appreciate if
             you could take the time to complete a Feedback Form. To work your
             way through the exhibition, scroll to the right to see more boards.
-            You can also easily click between boards using the arrows at the top
-            of each board.
+            You can easily click between boards using the arrows at the top of
+            each board.
           </p>
         </Modal.Body>
       </Modal>
