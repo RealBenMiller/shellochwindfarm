@@ -5,20 +5,6 @@ import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
 import DownloadFile from "../images/feedbackform.pdf"
 
-const getInitState = () => {
-  if (typeof window !== "undefined") {
-    const getQueryStringValue = window.location.search
-    if (getQueryStringValue === "?click") {
-      console.log("open")
-      const initialState = "open"
-    } else {
-      console.log("closed")
-      const initialState = "closed"
-    }
-    return initialState
-  }
-}
-
 const openCartAnimation = () =>
   new Promise((resolve, reject) => {
     setTimeout(() => resolve(true), 1000)
@@ -29,23 +15,9 @@ const closeCartAnimation = () =>
     setTimeout(() => resolve(true), 1000)
   })
 
-getInitState()
-
 const formMachine = Machine({
   id: "form",
-  initial: function getInitState() {
-    if (typeof window !== "undefined") {
-      const getQueryStringValue = window.location.search
-      if (getQueryStringValue === "?click") {
-        console.log("open")
-        const initialState = "open"
-      } else {
-        console.log("closed")
-        const initialState = "closed"
-      }
-      return initialState
-    }
-  },
+  initial: "closed",
 
   states: {
     closed: {
@@ -83,7 +55,18 @@ const formMachine = Machine({
 const FeedbackForm = () => {
   const [state, send] = useMachine(formMachine)
 
+  const getInitState = () => {}
+
   const FormButton = () => {
+    if (typeof window !== "undefined") {
+      const getQueryStringValue = window.location.search
+      if (getQueryStringValue === "?click") {
+        send("OPEN")
+      } else {
+        send("CLOSE")
+      }
+    }
+
     if (state.matches("open")) {
       return <></>
     }
@@ -100,8 +83,11 @@ const FeedbackForm = () => {
               font-size: 16px;
             }
           `}
+          value="open"
+          name="open"
           id="open"
-          onClick={() => {
+          type="submit"
+          onSubmit={() => {
             send("OPEN")
           }}
         >
