@@ -5,12 +5,14 @@ import { Machine } from "xstate"
 import { Form, Button } from "react-bootstrap"
 import DownloadFile from "../images/feedbackform.pdf"
 
-var initState = "closed"
-
-if (typeof document === !undefined) {
-  if (document.URL.indexOf("#click_approved") >= 0) {
-    console.log("yes")
-    initState = "open"
+const getInitState = () => {
+  const getQueryStringValue = window.location.search
+  if (getQueryStringValue === "?click") {
+    console.log("open")
+    return "open"
+  } else {
+    console.log("closed")
+    return "closed"
   }
 }
 
@@ -26,7 +28,7 @@ const closeCartAnimation = () =>
 
 const formMachine = Machine({
   id: "form",
-  initial: initState,
+  initial: getInitState(),
 
   states: {
     closed: {
