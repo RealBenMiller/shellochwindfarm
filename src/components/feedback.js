@@ -6,13 +6,15 @@ import { Form, Button } from "react-bootstrap"
 import DownloadFile from "../images/feedbackform.pdf"
 
 const getInitState = () => {
-  const getQueryStringValue = window.location.search
-  if (getQueryStringValue === "?click") {
-    console.log("open")
-    return "open"
-  } else {
-    console.log("closed")
-    return "closed"
+  if (typeof window !== "undefined") {
+    const getQueryStringValue = window.location.search
+    if (getQueryStringValue === "?click") {
+      console.log("open")
+      return "open"
+    } else {
+      console.log("closed")
+      return "closed"
+    }
   }
 }
 
