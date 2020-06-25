@@ -10,11 +10,12 @@ const getInitState = () => {
     const getQueryStringValue = window.location.search
     if (getQueryStringValue === "?click") {
       console.log("open")
-      return "open"
+      const initialState = "open"
     } else {
       console.log("closed")
-      return "closed"
+      const initialState = "closed"
     }
+    return initialState
   }
 }
 
@@ -30,7 +31,7 @@ const closeCartAnimation = () =>
 
 const formMachine = Machine({
   id: "form",
-  initial: getInitState(),
+  initial: initialState,
 
   states: {
     closed: {
