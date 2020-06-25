@@ -33,7 +33,19 @@ getInitState()
 
 const formMachine = Machine({
   id: "form",
-  initial: initialState,
+  initial: function getInitState() {
+    if (typeof window !== "undefined") {
+      const getQueryStringValue = window.location.search
+      if (getQueryStringValue === "?click") {
+        console.log("open")
+        const initialState = "open"
+      } else {
+        console.log("closed")
+        const initialState = "closed"
+      }
+      return initialState
+    }
+  },
 
   states: {
     closed: {
