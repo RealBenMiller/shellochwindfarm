@@ -29,6 +29,8 @@ const closeCartAnimation = () =>
     setTimeout(() => resolve(true), 1000)
   })
 
+getInitState()
+
 const formMachine = Machine({
   id: "form",
   initial: initialState,
