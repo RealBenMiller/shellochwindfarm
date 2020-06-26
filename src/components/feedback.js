@@ -70,9 +70,8 @@ const formMachine = Machine({
 const FeedbackForm = () => {
   const [state, send] = useMachine(formMachine)
 
-  const getInitState = () => {}
-
   const FormButton = () => {
+    console.log(state)
     if (state.matches("open")) {
       return <></>
     }
