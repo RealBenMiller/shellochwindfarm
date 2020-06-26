@@ -58,14 +58,14 @@ const FeedbackForm = () => {
   const getInitState = () => {}
 
   const FormButton = () => {
-    if (typeof window !== "undefined") {
-      const getQueryStringValue = window.location.search
-      if (getQueryStringValue === "?click") {
-        send("OPEN")
-      } else {
-        send("CLOSE")
-      }
-    }
+    // if (typeof window !== "undefined") {
+    //   const getQueryStringValue = window.location.search
+    //   if (getQueryStringValue === "?click") {
+    //     send("OPEN")
+    //   } else {
+    //     send("CLOSE")
+    //   }
+    // }
 
     if (state.matches("open")) {
       return <></>
@@ -83,11 +83,8 @@ const FeedbackForm = () => {
               font-size: 16px;
             }
           `}
-          value="open"
-          name="open"
           id="open"
-          type="submit"
-          onSubmit={() => {
+          onClick={() => {
             send("OPEN")
           }}
         >
