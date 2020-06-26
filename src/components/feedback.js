@@ -15,9 +15,24 @@ const closeCartAnimation = () =>
     setTimeout(() => resolve(true), 1000)
   })
 
+var initialState
+
+const CheckInitialState = () => {
+  if (typeof window !== "undefined") {
+    const getQueryStringValue = window.location.search
+    if (getQueryStringValue === "?click") {
+      initialState = "open"
+    } else {
+      initialState = "closed"
+    }
+  }
+}
+
+CheckInitialState()
+
 const formMachine = Machine({
   id: "form",
-  initial: "open",
+  initial: initialState,
 
   states: {
     closed: {
