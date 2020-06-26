@@ -17,7 +17,7 @@ const closeCartAnimation = () =>
 
 const formMachine = Machine({
   id: "form",
-  initial: "closed",
+  initial: "open",
 
   states: {
     closed: {
@@ -58,15 +58,6 @@ const FeedbackForm = () => {
   const getInitState = () => {}
 
   const FormButton = () => {
-    // if (typeof window !== "undefined") {
-    //   const getQueryStringValue = window.location.search
-    //   if (getQueryStringValue === "?click") {
-    //     send("OPEN")
-    //   } else {
-    //     send("CLOSE")
-    //   }
-    // }
-
     if (state.matches("open")) {
       return <></>
     }

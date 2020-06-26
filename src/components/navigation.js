@@ -15,7 +15,7 @@ const Navigation = () => {
           background-color: white;
           position: sticky;
           top: 0;
-          z-index: 8887;
+          z-index: 10;
         `}
       >
         <img
