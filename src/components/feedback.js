@@ -36,7 +36,7 @@ const formMachine = Machine({
     initial:{
       on:{
         '':[
-          {target: 'open', cond: CheckInitialState},
+          {target: 'opening', cond: CheckInitialState},
           {target: 'closed'}
         ]
       }
