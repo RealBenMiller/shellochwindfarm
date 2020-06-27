@@ -21,20 +21,26 @@ const CheckInitialState = () => {
   if (typeof window !== "undefined") {
     const getQueryStringValue = window.location.search
     if (getQueryStringValue === "?click") {
-      newState = "open"
+      return true
     } else {
-      newState = "closed"
-    }
+return false    }
   }
 }
 
-CheckInitialState()
 
 const formMachine = Machine({
   id: "form",
-  initial: newState,
+  initial: "initial",
 
   states: {
+    initial:{
+      on:{
+        '':[
+          {target: 'open', cond: CheckInitialState},
+          {target: 'closed'}
+        ]
+      }
+    },
     closed: {
       on: {
         OPEN: "open",
