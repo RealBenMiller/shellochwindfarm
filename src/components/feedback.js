@@ -77,7 +77,6 @@ const FeedbackForm = () => {
   const [state, send] = useMachine(formMachine)
 
   const FormButton = () => {
-    console.log(state)
     if (state.matches("open")) {
       return <></>
     }

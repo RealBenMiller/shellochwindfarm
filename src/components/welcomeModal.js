@@ -3,8 +3,21 @@ import { jsx, css, Global } from "@emotion/core"
 import { Button, Modal } from "react-bootstrap"
 
 const WelcomeModal = () => {
-  const [show, setShow] = useState(true)
+  const showVar = function(){
+    if (typeof window !== "undefined") {
+      const getQueryStringValue = window.location.search
+      if (getQueryStringValue === "?click") {
+        return false
+      } else {
+        return true  
+      }
+    }
+  }
+  const [show, setShow] = useState(showVar())
   const handleClose = () => setShow(false)
+  
+
+  showVar()
 
   return (
     <>
@@ -22,6 +35,9 @@ const WelcomeModal = () => {
             border-bottom: 4px solid lightblue;
             font-family: proxima-nova, sans-serif !important;
             font-weight: bold;
+          }
+          .hidden {
+            display: none !important;
           }
         `}
         show={show}
