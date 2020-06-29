@@ -486,7 +486,7 @@ const FeedbackForm = () => {
                   <input
                     name="one"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     checked={this.state.OneA === "yes"}
                     onChange={this.OnChangeOne}
                   />
@@ -502,7 +502,7 @@ const FeedbackForm = () => {
                   <input
                     name="one"
                     type="radio"
-                    value="no"
+                    value="No"
                     checked={this.state.OneA === "no"}
                     onChange={this.OnChangeOne}
                   />
@@ -518,7 +518,7 @@ const FeedbackForm = () => {
                   <input
                     name="one"
                     type="radio"
-                    value="dk"
+                    value="Don't Know"
                     checked={this.state.OneA === "dk"}
                     onChange={this.OnChangeOne}
                   />
@@ -655,7 +655,7 @@ const FeedbackForm = () => {
                   <input
                     name="three"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     checked={this.state.ThreeA === "yes"}
                     onChange={this.OnChangeThree}
                   />
@@ -671,7 +671,7 @@ const FeedbackForm = () => {
                   <input
                     name="three"
                     type="radio"
-                    value="no"
+                    value="No"
                     checked={this.state.ThreeA === "no"}
                     onChange={this.OnChangeThree}
                   />
@@ -687,7 +687,7 @@ const FeedbackForm = () => {
                   <input
                     name="three"
                     type="radio"
-                    value="dk"
+                    value="Don't Know"
                     checked={this.state.ThreeA === "dk"}
                     onChange={this.OnChangeThree}
                   />
@@ -723,7 +723,7 @@ const FeedbackForm = () => {
                   <input
                     name="Four"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     checked={this.state.FourA === "yes"}
                     onChange={this.OnChangeFour}
                   />
@@ -739,7 +739,7 @@ const FeedbackForm = () => {
                   <input
                     name="Four"
                     type="radio"
-                    value="no"
+                    value="No"
                     checked={this.state.FourA === "no"}
                     onChange={this.OnChangeFour}
                   />
@@ -755,7 +755,7 @@ const FeedbackForm = () => {
                   <input
                     name="Four"
                     type="radio"
-                    value="dk"
+                    value="Don't Know"
                     checked={this.state.FourA === "dk"}
                     onChange={this.OnChangeFour}
                   />
@@ -812,7 +812,7 @@ const FeedbackForm = () => {
                   <input
                     name="Five"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     checked={this.state.FiveA === "yes"}
                     onChange={this.OnChangeFive}
                   />
@@ -828,7 +828,7 @@ const FeedbackForm = () => {
                   <input
                     name="Five"
                     type="radio"
-                    value="no"
+                    value="No"
                     checked={this.state.FiveA === "no"}
                     onChange={this.OnChangeFive}
                   />
@@ -874,7 +874,7 @@ const FeedbackForm = () => {
                   <input
                     name="six"
                     type="radio"
-                    value="yes"
+                    value="Yes"
                     checked={this.state.SixA === "yes"}
                     onChange={this.OnChangeSix}
                   />
@@ -890,7 +890,7 @@ const FeedbackForm = () => {
                   <input
                     name="six"
                     type="radio"
-                    value="no"
+                    value="No"
                     checked={this.state.SixA === "no"}
                     onChange={this.OnChangeSix}
                   />
@@ -948,7 +948,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenP1"
                     type="checkbox"
-                    value="clean energy for future generations"
+                    value="Clean Energy for future generations"
                     checked={this.state.SevenP1A}
                     onChange={this.OnChangeSevenP1}
                   />
@@ -964,7 +964,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenP2"
                     type="checkbox"
-                    value="helping address the climate emergency"
+                    value="Helping address the Climate Emergency"
                     checked={this.state.SevenP2A}
                     onChange={this.OnChangeSevenP2}
                   />
@@ -997,7 +997,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenP4"
                     type="checkbox"
-                    value="locally produced energy"
+                    value="Locally produced Energy"
                     checked={this.state.SevenP4A}
                     onChange={this.OnChangeSevenP4}
                   />
@@ -1013,7 +1013,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenP5"
                     type="checkbox"
-                    value="support scottish government's energy strategy targets"
+                    value="Support Scottish Government's Energy Strategy Targets"
                     checked={this.state.Seven5A}
                     onChange={this.OnChangeSevenP5}
                   />
@@ -1029,7 +1029,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenP6"
                     type="checkbox"
-                    value="opportunity for local community groups to invest"
+                    value="Opportunity for local community groups to invest"
                     checked={this.state.SevenP6A}
                     onChange={this.OnChangeSevenP6}
                   />
@@ -1050,7 +1050,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN1"
                     type="checkbox"
-                    value="impact on tourism"
+                    value="Impact on Tourism"
                     checked={this.state.SevenN1A}
                     onChange={this.OnChangeSevenN1}
                   />
@@ -1066,7 +1066,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN2"
                     type="checkbox"
-                    value="access"
+                    value="Access Tracks"
                     checked={this.state.SevenN2A}
                     onChange={this.OnChangeSevenN2}
                   />
@@ -1082,7 +1082,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN3"
                     type="checkbox"
-                    value="noise"
+                    value="Noise"
                     checked={this.state.SevenN3A}
                     onChange={this.OnChangeSevenN3}
                   />
@@ -1099,7 +1099,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN4"
                     type="checkbox"
-                    value="impact on roads"
+                    value="Impact on Local Roads"
                     checked={this.state.SevenN4A}
                     onChange={this.OnChangeSevenN4}
                   />
@@ -1115,7 +1115,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN5"
                     type="checkbox"
-                    value="wildlife"
+                    value="Impact on Wildlife"
                     checked={this.state.SevenN5A}
                     onChange={this.OnChangeSevenN5}
                   />
@@ -1131,7 +1131,7 @@ const FeedbackForm = () => {
                   <input
                     name="sevenN6"
                     type="checkbox"
-                    value="visual impact"
+                    value="Visual Impact"
                     checked={this.state.SevenN6A}
                     onChange={this.OnChangeSevenN6}
                   />
