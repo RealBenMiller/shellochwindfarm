@@ -487,7 +487,7 @@ const FeedbackForm = () => {
                     name="one"
                     type="radio"
                     value="Yes"
-                    checked={this.state.OneA === "yes"}
+                    checked={this.state.OneA === "Yes"}
                     onChange={this.OnChangeOne}
                   />
                   <span
@@ -503,7 +503,7 @@ const FeedbackForm = () => {
                     name="one"
                     type="radio"
                     value="No"
-                    checked={this.state.OneA === "no"}
+                    checked={this.state.OneA === "No"}
                     onChange={this.OnChangeOne}
                   />
                   <span
@@ -519,7 +519,7 @@ const FeedbackForm = () => {
                     name="one"
                     type="radio"
                     value="Don't Know"
-                    checked={this.state.OneA === "dk"}
+                    checked={this.state.OneA === "Don't Know"}
                     onChange={this.OnChangeOne}
                   />
                   <span
@@ -656,7 +656,7 @@ const FeedbackForm = () => {
                     name="three"
                     type="radio"
                     value="Yes"
-                    checked={this.state.ThreeA === "yes"}
+                    checked={this.state.ThreeA === "Yes"}
                     onChange={this.OnChangeThree}
                   />
                   <span
@@ -672,7 +672,7 @@ const FeedbackForm = () => {
                     name="three"
                     type="radio"
                     value="No"
-                    checked={this.state.ThreeA === "no"}
+                    checked={this.state.ThreeA === "No"}
                     onChange={this.OnChangeThree}
                   />
                   <span
@@ -688,7 +688,7 @@ const FeedbackForm = () => {
                     name="three"
                     type="radio"
                     value="Don't Know"
-                    checked={this.state.ThreeA === "dk"}
+                    checked={this.state.ThreeA === "Don't Know"}
                     onChange={this.OnChangeThree}
                   />
                   <span
@@ -724,7 +724,7 @@ const FeedbackForm = () => {
                     name="Four"
                     type="radio"
                     value="Yes"
-                    checked={this.state.FourA === "yes"}
+                    checked={this.state.FourA === "Yes"}
                     onChange={this.OnChangeFour}
                   />
                   <span
@@ -740,7 +740,7 @@ const FeedbackForm = () => {
                     name="Four"
                     type="radio"
                     value="No"
-                    checked={this.state.FourA === "no"}
+                    checked={this.state.FourA === "No"}
                     onChange={this.OnChangeFour}
                   />
                   <span
@@ -756,7 +756,7 @@ const FeedbackForm = () => {
                     name="Four"
                     type="radio"
                     value="Don't Know"
-                    checked={this.state.FourA === "dk"}
+                    checked={this.state.FourA === "Don't Know"}
                     onChange={this.OnChangeFour}
                   />
                   <span
@@ -813,7 +813,7 @@ const FeedbackForm = () => {
                     name="Five"
                     type="radio"
                     value="Yes"
-                    checked={this.state.FiveA === "yes"}
+                    checked={this.state.FiveA === "Yes"}
                     onChange={this.OnChangeFive}
                   />
                   <span
@@ -829,7 +829,7 @@ const FeedbackForm = () => {
                     name="Five"
                     type="radio"
                     value="No"
-                    checked={this.state.FiveA === "no"}
+                    checked={this.state.FiveA === "No"}
                     onChange={this.OnChangeFive}
                   />
                   <span
@@ -875,7 +875,7 @@ const FeedbackForm = () => {
                     name="six"
                     type="radio"
                     value="Yes"
-                    checked={this.state.SixA === "yes"}
+                    checked={this.state.SixA === "Yes"}
                     onChange={this.OnChangeSix}
                   />
                   <span
@@ -891,7 +891,7 @@ const FeedbackForm = () => {
                     name="six"
                     type="radio"
                     value="No"
-                    checked={this.state.SixA === "no"}
+                    checked={this.state.SixA === "No"}
                     onChange={this.OnChangeSix}
                   />
                   <span
@@ -907,7 +907,7 @@ const FeedbackForm = () => {
                     name="six"
                     type="radio"
                     value="Undecided"
-                    checked={this.state.SixA === "u"}
+                    checked={this.state.SixA === "Undecided"}
                     onChange={this.OnChangeSix}
                   />
                   <span
