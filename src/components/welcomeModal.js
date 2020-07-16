@@ -65,9 +65,6 @@ const WelcomeModal = () => {
             You can easily click between boards using the arrows at the top of
             each board.
           </p>
-          <p>
-            Force 9 Energy will be hosting a live interactive question and answer session for the proposed Shelloch Wind Farm on Wednesday 15th July from 4-7pm. Members of the project team will be available to answer any questions and queries you may have. Click on the 'Project Website' button at the top of the page for more details.
-          </p>
         </Modal.Body>
       </Modal>
     </>
