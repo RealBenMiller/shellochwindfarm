@@ -46,6 +46,26 @@ const Navigation = () => {
             Project Website
           </a>
         </Button>
+        <Button
+          css={css`
+            margin-left: 20px;
+            background-color: #007fc1;
+            @media (max-width: 500px) {
+              font-size: 10px;
+            }
+            @media (min-width: 501px) {
+              font-size: 16px;
+            }
+            a {
+              color: white;
+              text-decoration: none;
+            }
+          `}
+        >
+          <a href="http://force9.theimagineers.com" target="_blank">
+            View 3D Model
+          </a>
+        </Button>
         <FeedbackForm />
       </div>
     </>
