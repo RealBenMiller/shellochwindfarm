@@ -50,8 +50,9 @@ const Navigation = () => {
         <OverlayTrigger
         defaultShow={true}
         rootClose
-        delay={{hide: 5000}}
+        delay={{hide: 3500}}
         placement="bottom" 
+        trigger={'focus'}
         overlay={<Tooltip show placement="bottom">View new additional landscape and modelling information by clicking this button</Tooltip>}>
         <Button
           css={css`
