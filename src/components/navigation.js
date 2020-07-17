@@ -1,10 +1,11 @@
 import React from "react"
 import { jsx, css, Global } from "@emotion/core"
 import Logo from "../images/logo.jpg"
-import { Button } from "react-bootstrap"
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap"
 import FeedbackForm from "../components/feedback"
 
 const Navigation = () => {
+
   return (
     <>
       <div
@@ -46,6 +47,12 @@ const Navigation = () => {
             Project Website
           </a>
         </Button>
+        <OverlayTrigger
+        defaultShow={true}
+        rootClose
+        delay={{hide: 5000}}
+        placement="bottom" 
+        overlay={<Tooltip show placement="bottom">View new additional landscape and modelling information by clicking this button</Tooltip>}>
         <Button
           css={css`
             margin-left: 20px;
@@ -66,6 +73,7 @@ const Navigation = () => {
             View 3D Model
           </a>
         </Button>
+        </OverlayTrigger>
         <FeedbackForm />
       </div>
     </>
