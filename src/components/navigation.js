@@ -75,7 +75,6 @@ const Navigation = () => {
           </a>
         </Button>
         </OverlayTrigger>
-        <FeedbackForm />
       </div>
     </>
   )

@@ -59,8 +59,7 @@ const WelcomeModal = () => {
             interactive Story Map which is set out over 9 Boards.
           </p>
           <p>
-            We would welcome your comments and feedback and would appreciate if
-            you could take the time to complete a Feedback Form. To work your
+          To work your
             way through the exhibition, scroll to the right to see more boards.
             You can easily click between boards using the arrows at the top of
             each board.
